@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>데이터 입력</title>
+  <style>
+    body{text-align: center;}
+    span{color: blue; font-size: 1.5em;}
+  </style>
+</head>
+<body>
+  <script>
+
+    // //입력
+    // let number = prompt("수를 입력하세요 :", "1~30중에 입력");
+
+
+    // //출력
+    // document.write("입력한 수는 " + number + "입니다.");
+
+    // console.log(typeof(number));   // string
+    // prompt 함수는 입력값은 문자다!! 숫자로 쓰려면 숫자데이터로 변환해줘야(parseInt 함수)!!
+
+
+
+
+    /* parseInt함수 : 문자데이터를 숫자데이터로 변환해주는 함수 
+                      소수점은 다 날린다(소수점 사용하려면 parseFloat() 사용해야)   */
+
+    let num2 = prompt("수를 입력하세요 :");
+    num2 = parseInt(num2) + 10 
+    document.write(num2);1        // 11
+
+
+
+
+
+
+
+    // let name = prompt("이름을 입력하세요 :")
+    // document.write("<span>" + name + "</span>"  + "님 환영합니다.")
+
+    // 태그 넣어줄 때 "" 안에 넣고 +로 연결해줘야된다!!
+
+  </script>
+</body>
+</html>

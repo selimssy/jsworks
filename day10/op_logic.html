@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비교 및 논리연산자</title>
+</head>
+<body>
+  <script>
+
+    let num1 = 8, num2 = 5;
+    let result = 0;
+
+
+    // 비교 연산
+    result = (num1 < num2);
+    console.log(result);      // false
+
+    result = (num1 > num2);   // true
+    console.log(result);
+
+    result = (num1 == num2);   // false
+    console.log(result);
+
+    result = (num1 != num2);   // true
+    console.log(result);
+
+
+
+
+    //논리 연산
+
+    // &&(논리곱) : 두 항이 모두 참이어야 참
+    // ||(논리합) : 두 항 중 하나라도 참이면 참
+    // !(논리부정) : true, false 반대로 출력(단항)
+
+
+
+    result = (num1 > num2) && (num1 == num2);
+    console.log(result);                          // false
+
+    result = (num1 > num2) || (num1 == num2);     // true
+    console.log(result);
+
+    result = !(num1 < num2);   // false 인데
+    console.log(result);        // true 로 출력
+
+  </script>
+</body>
+</html>

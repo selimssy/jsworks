@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>변수의 선언과 사용</title>
+</head>
+<body>
+  <script>
+    var name;
+    // name이라는 변수 선언
+
+    name = "손흥민";
+    // name 변수에 '손흥민'이라는 값 대입 
+
+
+    var grade;
+    grade=2;
+
+
+    // class는 변수로 사용할 수 없다(class는 예약어)
+    // 변수명이 숫자로 시작할 수도 없다
+
+
+    var schoolclass=3
+    // 선언과 동시에 초기화
+
+
+
+    var isMerried = false
+    // 이렇게 선언하면 컴퓨터는 isMerried 변수를 boolean으로 인식
+
+
+
+
+    document.write("이름 : " + name + '<br>');
+    // <br>을 문자로 취급해서 따음표 안에 넣어야! 그리고 연결해줘야
+    // =는 대입연산자, +는 문자인 경우 연결연산자(숫자면 산수연산자)
+    document.write("학년 : " + grade + "학년<br>");
+    document.write("반 : " + schoolclass + "<br>");
+    document.write("결혼유뮤 : " + isMerried + '<br>')
+
+
+
+
+
+    // typeof() : 자료형 알려주는 함수 
+    console.log(typeof(name));   //string
+    console.log(typeof(grade));   //number
+    console.log(typeof(schoolclass));   //number
+    console.log(typeof(isMerried));   //boolean
+
+  </script>
+</body>
+</html>
