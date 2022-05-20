@@ -1,0 +1,84 @@
+개발-테스트-배포
+
+flexbox froggy
+
+align-items
+
+
+
+<  :: 가상선택자  >
+a::after{
+    content: "NEW"
+}
+
+
+
+origin padding box   padding 끝나는부분부터가 아니라 border 끝나는 부분부터 시작이다ㅠㅠ
+
+
+
+li에서 display:inline block하고 a에서  또 display:block 주는거 다시 공부하자ㅠ
+
+
+
+
+
+
+<animation>
+@keyframes 애니메이션 이름{
+      from{}
+      to{}
+}
+
+
+
+
+
+
+ #intro #photo{width: 100px; height: 300px; margin: 20px 20px 20px 40px;}  이렇게 하니까 됬다
+
+
+
+
+
+
+
+
+
+함수 : function()  (=메소드:method()  )
+
+
+console.log(ch2.charCodeAt(0)); 
+// 0번 위치: 첫 글자를 숫자로 출력
+
+
+
+
+
+대입연산자
+산술연산자  + - * / %
+
+논리연산자
+     비교연산자(>, < , ==, !=)
+     논리연산자(&&, ||, !)
+
+
+
+출력함수 : document.write()
+
+입력함수 : prompt()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
