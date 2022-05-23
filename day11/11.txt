@@ -1,0 +1,85 @@
+대입연산자
+복합대입연산자
+산술연산자
+비교, 논리연산자
+삼항(조건)연산자
+
+
+
+자료형(type) - 숫자, 문자, 불리언, 배열, 객체
+
+형변환(type conversion)
+    ex)  숫자형 → 문자형
+	   toString(숫자) : 문자로
+
+         문자형 → 숫자형
+               Number(문자) : 정수, 실수 다 가능
+	   ParesInt(문자) : 정수로(소수점 다 자린다)
+               ParseFloat(문자) : 실수
+
+
+
+
+변수(variable)
+ var, let  (자료형 예약어)
+
+상수(constant variable)
+const     (상수형 예약어)
+
+
+
+
+Number, ParesInt, ParseFloat 정확하게 어떤 차이인지 알아보자
+
+
+
+
+
+
+if문
+
+if(조건식){
+   
+}
+else if(조건식){
+
+}
+else(조건식){
+
+}
+
+
+
+
+
+
+조건 - if문, switch문
+반복 - while문, for문
+
+
+
+
+
+
+초기값(변수 선언)
+
+while(조건식){
+     실행문;
+     증감값;
+}
+
+
+i++ 이랑 i +=1 이랑 무슨 차이지
+
+
+
+
+
+반복조건문
+while ~ if
+
+while(true){
+      if(){
+           true에서는 break 반드시 필요
+          }
+}

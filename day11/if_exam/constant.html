@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상수 사용</title>
+</head>
+<body>
+  <script>
+
+    // 입력(선언)
+    // let MONTH = 12;
+    const MONTH = 12;
+    // MONTH = 10;(const로 선언해서 변경 불가)
+
+    //출력
+    console.log(MONTH);
+    // 이러면 오류난다!(런타임 에러 : 실행했을 때 에러)
+    // const로 선언하면 변경할 수 없다!(MONTH는 평생 12)
+    // 상수는 변경해서는 안되는 진리나 사실을 표현(재선언하거나 재할당할 수 없다)
+    // const로 선언하면 관례적으로 대문자로 선언
+
+    console.log("1년은 " + MONTH + "달이 있습니다.")
+
+
+
+
+    
+    // 원의 둘레와 넓이 계산하는 프로그램
+    // 원의 둘레 = 2 * PI * r 
+    // 원의 넓이 = r^2 * PI
+
+    const PI = 3.14;
+    let radius = 4;
+    let circum = 0.0;       // 원의 둘레(실수로 초기화)
+    let circleArea = 0.0;     // 원의 넓이
+
+
+
+    //재할당(변경)
+    // let radius = 5;       컴파일 에러(실행 전에 알려주는)
+    // let 은 재할당 불가(var은 가능)
+
+
+
+
+
+    //연산 
+
+    circum = 2 * PI * radius;
+    circleArea = radius * radius * PI;
+
+
+
+    //출력
+    console.log(circum);      // 25.12
+    console.log(circleArea);    // 50.24
+
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>안전 속도</title>
+  <style>
+    .speed{font-weight: bold;}
+  </style>
+</head>
+<body>
+  <script>
+
+    /* 자동차 속도가 50km/h 이상이면 
+       안전속도 위반! 과태료 10만원 부과 대상   */
+
+
+
+
+    //입력
+    let car_speed = Number(prompt("현재 속도 : "));
+
+
+    //제어 연산 및 출력
+
+
+
+    // if 단독문
+    // if(car_speed >= 50){
+    //   document.write("안전속도 위반! 과태료 10만원 부과 대상<br>")
+    // }
+    // document.write("시속 " + "<sapn class = 'speed'>" + car_speed  + "km/h" + "</sapn>" + "입니다.")
+    
+  
+  
+  
+    // if ~ else문
+    if(car_speed >= 50){
+        document.write("안전속도 위반! 과태료 10만원 부과 대상<br>")
+    }
+    else{
+      document.write("안전속도 준수 중<br>")
+    }
+    document.write("시속 " + "<sapn class = 'speed'>" + car_speed  + "km/h" + "</sapn>" + "입니다.")
+
+
+  </script>
+</body>
+</html>

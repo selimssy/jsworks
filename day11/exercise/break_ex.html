@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>break_ex</title>
+</head>
+<body>
+  <script>
+
+    let sumV = 0
+    let n = 0
+    while(true){
+      n++
+      sumV += n
+
+      // document.write("n = " + n )
+      // document.write(", sum = " + sumV + "<br>")
+
+      if(sumV > 100){
+        document.write("n = " + n + "<br>" + "sum = " + sumV)
+        break;
+      }
+    }
+
+
+    // t)
+    // while(true){
+    //   n++
+    //   sumV += n     
+    // if(sumV > 100) break;  
+    // }
+
+    // document.write("n = " + n + "<br>")
+    // document.write("sum = " + sumV)
+    // 이렇게 document.write는 while문 탈출하고 위치시키는 것도 방법일듯!
+  </script>
+</body>
+</html>
