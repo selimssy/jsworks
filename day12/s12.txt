@@ -11,3 +11,4 @@ switch-ex3.html
 forfor.html
 gugudan.html
 forfor2.html
+seat.html
