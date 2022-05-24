@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>for문 예제</title>
+</head>
+<body>
+  <script>
+
+
+    // 1부터 5까지 곱하는 프로그램
+
+    
+    // let facto = 1;    // 곱셈 연산할 때는 0으로 초기화하지 않도록 주의!
+    // for(let i = 1; i <=5; i++){
+    //   // facto = facto * i;
+    //   facto *= i
+    //   console.log("i = " + i + ", facto = " + facto)
+     
+    // }
+    // document.write("i = " + i)      /* 출력 안 된다!(지역변수라 for문 안에서만 존재하고 탈출 후 
+    //                                                  메모리에서 사라진다!)    */
+    // document.write("결과는 " + facto)
+ 
+
+    /*  i = 1, true, 1 * 1 = 1
+        i = 2, true, 1 * 2 = 2
+        i = 3, true, 2 * 3 = 6
+        i = 4, true, 6 * 4 = 24
+        i = 5, true, 24 * 5 = 120
+        i = 6, false
+    */
+
+
+
+
+
+    let i = 0;
+    let facto2 = 1;    // 곱셈 연산할 때는 0으로 초기화하지 않도록 주의!
+    for(i <=5; i++;){
+      // facto = facto * i;
+      facto2 *= i
+      console.log("i = " + i + ", facto2 = " + facto2)
+    }
+    document.write("i = " + i)      
+                                                     
+    document.write("결과는 " + facto2)
+    //왜 안 되지..
+ 
+
+
+  </script>
+</body>
+</html>

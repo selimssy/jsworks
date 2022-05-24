@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반복문 for(</title>
+</head>
+<body>
+  <script>
+
+    // 입력 받은 특정 수까지의 총합을 계산하는 프로그램
+
+    
+    let num = Number(prompt("몇 까지의 합을 계산할까요?"));
+    let sumV = 0;
+
+    for(let i = 0; i <= num; i++){
+      sumV += i;
+      console.log("i = " + i + ", sumV = " + sumV);
+    }
+    console.log("합계 : " + sumV)
+    
+
+
+  </script>
+</body>
+</html>

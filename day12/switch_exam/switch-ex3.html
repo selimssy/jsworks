@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>switch ~ case 문</title>
+  <style>
+    body{background: #00f; color: #eee; text-align: center; font-size: 2em;}
+    p{margin-top: 30px; text-shadow: 2px 2px #000;}
+    p strong{color: yellow; font-size: 1.2em;}
+    /* strong에도 이렇게 할 수 있네... */
+
+  </style>
+</head>
+<body>
+  <script>
+
+    let num = Number(prompt("관심 세션을 선택해 주세요.", "1-마케팅, 2-개발, 3-디자인"));
+    let session = ""
+    let room = 0;
+
+    switch(num){
+      case 1:
+        session = "마케팅", room = 201;
+        break; 
+
+      case 2:
+        session = "개발", room = 202;
+        break; 
+
+      case 3:
+        session = "디자인", room = 202;
+        break; 
+
+      default:
+        document.write("<p>세션이 없습니다.</p>")
+    }
+    
+    document.write("<p>" + session + " 세션은 <strong>" + room + "호</strong>에서 진행됩니다.<p>")
+
+  </script>
+</body>
+</html>

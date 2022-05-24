@@ -75,7 +75,7 @@ i++ 이랑 i +=1 이랑 무슨 차이지
 
 
 
-반복조건문
+무한반복 조건문
 while ~ if
 
 while(true){
@@ -83,3 +83,26 @@ while(true){
            true에서는 break 반드시 필요
           }
 }
+
+
+
+
+
+
+애니메이션
+@keyframes 이름{
+     from{
+     }
+     to{
+     }
+}
+
+복습,,,
+
+
+
+
+
+
+피그마(Figma)
+어도비xD, 스케치랑 비슷

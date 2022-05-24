@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>switch ~ case 문</title>
+</head>
+<body>
+  <script>
+
+    // 순위에 따른 메달 정하기
+
+    // let ranking = 1;
+  
+    // switch(ranking){
+    //   case 1:    // ranking =1
+    //     document.write("금메달<br>");
+    //    break;                               // break 안쓰면 ranking=1이라 했을 때
+    //                                         // 은메달까지 나온다!!  
+
+    //   case 2:
+    //     document.write("은메달<br>");
+    //     break;
+
+    //   case 3:
+    //     document.write("동메달<br>");
+    //     break;
+      
+    //   default:
+    //     document.write("메달 없음<br>");
+    //     break;
+    // }
+
+
+
+
+
+    // 위 예제를 if문으로
+
+    // let ranking = 1;
+
+    // if(ranking == 1)
+    //   document.write("금메달<br>");
+    // else if(ranking == 2)
+    //   document.write("은메달<br>");
+    // else if(ranking == 3)
+    //   document.write("동메달<br>");
+    // else
+    //   document.write("메달 없음");
+
+
+    
+    let ranking = 4;
+    let medal = "";
+
+    if(ranking == 1)
+      medal = "금메달";
+    else if(ranking == 2)
+      medal = "은메달";
+    else if(ranking == 3)
+      medal = "동메달";
+    else
+      medal = "메달 없음";
+    document.write(medal);
+
+
+    
+    
+
+  </script>
+</body>
+</html>
