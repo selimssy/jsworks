@@ -1,0 +1,60 @@
+display:block
+min-height: calc(100vh - 100px)
+min-height는 뭐지
+
+
+
+
+
+
+
+로컬 말고 파일로 저장할 때 저장할 때 save local copy
+
+
+
+
+
+
+
+함수이름(인자, 인자...)
+-내장함수(builtIn Function)
+: parseInt(),  prompt(),  console.log() 등
+
+
+-사용자(정의) 함수
+function 함수이름(){
+      변수;
+      함수();
+}
+
+
+
+
+매개변수는 자료형(let var) 생략한다
+
+
+-return 이 있는 함수, 없는 함수
+
+
+
+
+
+
+전역변수 - 주로 상단(위쪽에 위치)
+ : 프로그램이 종료되면 소멸
+
+지역변수(매개 변수) - 블럭의 내부, 함수 블럭 안에 위치
+ : 블럭 빠져나오면 소멸
+
+
+
+자바스크립트는 id 쓴다!
+
+웹어서는 주로 document.getElementById 이거 쓴다
+
+
+
+
+
+
+
