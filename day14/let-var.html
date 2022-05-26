@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let & var</title>
+</head>
+<body>
+    
+    <script>
+
+        // 변수의 선언과 재할당
+        
+        var x = 1;
+
+        var x = 2;
+
+        //console.log(x);     // 원칙적으로 같은 이름의 변수를 재할당할 수 없지만  
+                            // var는 이렇게 해도 2라고 뜬다.
+                            // 그러니까 되도록 let을 사용하자!
+
+
+
+        let y = 1;
+
+        // let y = 2;    // let은 같은 이름 변수 재선언하면 빨간줄 뜨면서 오류라고 알려준다!
+
+        y =2   // 바꾸려면 이렇게
+
+
+
+
+
+        // var의 호이스팅(hoisting)
+        // 인터프리터가 나중에 선언해도 기억함
+        // 원칙적으로 출력이 먼저 될 수 없지만 var는 가능
+
+        console.log(a);      // 오류없음(그냥 undefined라고 뜬다)
+        var a = 1; 
+
+        console.log(b);      // 오류
+        let b = 1;
+
+    </script>
+
+</body>
+</html>

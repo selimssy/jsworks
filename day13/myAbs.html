@@ -11,12 +11,14 @@
 </head>
 <body>
 
-    <button type="button" onclick="myAbs(-3)">계산</button>
+    <button type="button" onclick="myAbs()">계산</button>
     <p id="demo"></p>
 
     <script>
 
-        function myAbs(x){
+        function myAbs(){
+            let x = Number(prompt("입력"))
+
             if(x >= 0){
                 // return x;
                 document.getElementById("demo").innerHTML = x;
