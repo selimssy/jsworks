@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주사위 만들기</title>
+</head>
+<body>
+    
+    <script>
+
+        // 주사위 만들기
+
+        // let dice = Math.floor(Math.random() * 6 + 1)
+        // document.write(dice);
+
+
+        // 주사위 10번 던지기
+        // for(i = 1; i <= 10; i++){
+        //     let dice = Math.floor(Math.random() * 6 + 1)
+        //     console.log(dice);          
+        // }
+
+
+
+
+        // 주사위 2개를 10번 던지기
+
+        // for(i = 1; i <= 10; i++){
+        //     let dice1 = Math.floor(Math.random() * 6 + 1);
+        //     let dice2 = Math.floor(Math.random() * 6 + 1);
+        //     console.log("dice1 = " + dice1 + ", dice2 = " + dice2)
+        // }
+
+
+
+
+
+        // 두 수의 합이 8이면 "Eight Thrown!",  11이면 "Eleven Thrown!"
+            // 두 수가 같으면 "Double Thrown!"
+
+
+            for(i = 1; i <= 10; i++){
+            let dice1 = Math.floor(Math.random() * 6 + 1);
+            let dice2 = Math.floor(Math.random() * 6 + 1);
+            
+            console.log(dice1 + ", " + dice2)
+            // 이걸 여기에 쓰면 두 수 출력되고 같으면 Double Thrown! 이런식
+            if(dice1 + dice2 == 8)
+                console.log("Eight Thrown!")
+
+            else if(dice1 + dice2 == 11)
+                console.log("Eleven Thrown!")
+            
+            else if(dice1 == dice2)
+                console.log("Double Thrown!")
+            // else
+            //     console.log(dice1 + ", " + dice2)  
+            // 이걸 여기에 쓰면 저 3조건 아닌 경우에만 두 수 출력, 나머지는 두 출력
+            // 안하고 Double Thrown! 등만             
+        }
+        // t는 total = dice1 + dice2로 해서 if 안에 total 조건으로 했다
+
+
+    </script>
+
+
+</body>
+</html>

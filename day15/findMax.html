@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최대, 최솟값 찾기</title>
+</head>
+<body>
+    <script>
+        // 최댓값
+        let number = [17, 33, 25, 92, 56, 72];
+        
+        let maxV = number[0]    // 일단 첫 번째 값을 넣고 다음 수랑 비교해서 더 크면
+                                //  바꾸고 아니면 그대로 있고
+        for(let i = 0; i < number.length; i++){
+            if(number[i] > maxV)
+                maxV = number[i];
+        }
+        document.write("최댓값 : " + maxV)
+
+
+
+
+        let minV = number[0]
+        for(let i = 0; i < number.length; i++){
+            if(number[i] < minV)
+                minV = number[0];
+        }
+        document.write("<br>최솟값 : " + minV)
+    </script>
+</body>
+</html>

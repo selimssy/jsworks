@@ -1,0 +1,19 @@
+imagemap.html  이거 다시ㅠㅠ
+map.css
+checkbox.html     label 태그가 왜 안먹지...ㅠ(→ label 태그에 for을 안써줬다!!)
+check.css
+mediaquery.html
+mq.css
+
+
+
+
+findMax.html
+show/hide.html
+show-hide2.html
+
+mdn → 자바스크립트 → 빌트인 오브젝트 
+
+math-pi.html
+dice.html
+throwDice.html

@@ -1,0 +1,44 @@
+.css-checkbox:checked + label{
+    background-position: 0 -20px;
+}
+: 마우스로 체크되면 이미지가 20px 위로 올라감
+
+
+
+
+
+min-width: 1000px   :     1000px 이상
+max-width: 1000px   :     1000px 이하
+
+
+
+
+@media screen and (min-width 720px)
+
+
+
+숨기기: display:none
+보이기: display: block
+
+
+
+
+
+
+
+
+자료형 - 숫자, 문자, 불리언, 배열, 객체
+
+객체는 가장 크고 복합적인 자료형
+숫자, 문자, 불리언, 배열, 함수( ) 모두 객체에 해당
+
+
+
+내장 객체  :자바스크립트에서 기본으로 제공하는 객체
+ex) Math 객체, Date 객체, Window 객체, document 객체
+
+
+사용자 정의형 객체 만들기:
+function 객체이름( ){
+
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math 객체</title>
+</head>
+<body>
+    <script>
+
+        // Math의 함수 또는 속성을 사용
+
+        const PI = 3.1415;    // 상수선언
+
+        console.log(Math.PI);
+
+
+        
+        // 반올림(정수로)
+        console.log(Math.round(3.14))   // 3
+        console.log(Math.round(3.54))   // 4
+
+
+        // 버림(음수에서는 작은 수 중 가장 큰 수)
+        console.log(Math.floor(1.54))   // 1
+        console.log(Math.floor(-1.54))   // -2
+
+
+        // 절댓값
+        console.log(Math.abs(-5.3))    // 5.3
+
+
+        // 거듭제곱
+        console.log(Math.pow(2,3))    // 8
+
+
+        // 무작위 수(난수)
+        // 0과 1 사이의 난수 반환
+        console.log(Math.random())
+        console.log(Math.floor(Math.random()*10))
+
+
+
+
+        // 주사위 만들기(1~6까지의 수 랜덤으로)
+        console.log(Math.floor(Math.random()*6 + 1))
+    </script>
+</body>
+</html>

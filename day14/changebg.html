@@ -6,26 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/bgcolor.css">
+    <style>
+        span{color: #fff;}
+    </style>
 </head>
 <body>
 
     <div class="menu">
         <ul>
-            <li><a href="#" onclick="changeBg('green')">Green</a></li>
-            <li><a href="#" onclick="changeBg('black')">Black</a></li>
-            <li><a href="#" onclick="changeBg('pink')">Pink</a></li>
+            <li><a href="#" onclick="changeBg('green', '10px')">Green</a></li>
+            <li><a href="#" onclick="changeBg('black', '20px')">Black</a></li>
+            <li><a href="#" onclick="changeBg('pink', '30px')">Pink</a></li>
         </ul>
     </div>
 
-    <div class="box" id="rect"></div>
+    <div class="box" id="rect"><span>안녕하세요</span></div>
 
     
 
     <script>
 
-        function changeBg(color){
+        function changeBg(color, size){
             let rect = document.getElementById("rect");
-            rect. style.backgroundColor = color  // backgroundColor 까지 넣어줘야!
+            rect.style.backgroundColor = color  // backgroundColor 까지 넣어줘야!
+            rect.style.fontSize = size
         }
 
     </script>
