@@ -1,0 +1,129 @@
+역슬래쉬 : escape(이스케이프) 문자
+\n  줄바꿈
+\n  홀따옴표
+\t   탭
+
+
+
+
+html  → style → 자바스크립트 순으로 해석
+
+따라서 자바스크립트 <script src></script> 이걸 맨 위에다 쓰려면
+window.onload = function(){
+
+	이 안에다가 js 파일의 모든걸 넣으면 된다!!(얘혼자 맨 윗줄에 쓰고 중괄호 닫지않도록 주의!)
+
+}
+
+
+
+
+avg.toFixed(2) 이거 복습!!ㅠㅠ
+
+
+switch ~ case문에서 break 생략하면
+다음 break 나올때까지 계속 읽는다!!!   (문자로 +=이거면 뒤로 계속 연결하고 = 이거면 
+마지막 default 값이 입력되버리고)
+
+
+
+
+
+
+
+<명시적 선언>
+function compute(){
+         실행문
+}
+호출법 : compute()
+
+
+
+
+<익명함수로 선언>
+let compute = function(){
+         실행문
+}
+호출법 : compute()  똑같다!!
+
+
+
+
+
+
+
+
+
+
+배열에 요소 추가, 삭제하는 함수
+: 배열이름.push("a")   -  배열의 맨 뒤에 "a" 추가 
+ 배열이름.pop( )    -  맨 뒤 요소 삭제
+
+배열이름.unshift("a")   -  맨 앞에 "a" 추가
+배열이름.shift( )   -  맨 앞의 요소 삭제
+
+
+
+
+for ~ in문 공부!!
+for ~ in문은 프로퍼티에 접근하는데 배열은 인덱스 숫자가 프로퍼티에 해당해서 0 1 2 이런식으로!
+
+
+
+
+
+특정 위치에서 추가, 삭제 :
+배열이름.splice(2 , 1) : 2번 인덱스에서 1개 삭제
+배열이름.splice(2 , 0, "k") : 2번 인덱스에서 삭제하지 않고 "k"를 추가
+
+
+
+
+
+
+배열이름.indexOf( ) 함수
+: 인덱스번호 찾는 함수(위치 찾는 함수)
+
+배열이름.indexOf( ) : 앞에서부터 찾는다
+배열이름.lastIndexOf : 뒤에서부터 찾는다
+
+
+
+
+
+객체  - 사물의 대상, 복합자료형
+let persen = {
+     let name : "손흥민",
+     let age : 31,
+     let ismarried : false,
+     play: function(){"골인"}
+}
+앞에꺼가 key 뒤에꺼가 value
+
+person.name 이런식으로 출력
+
+let 안써도 되는것같다
+
+
+
+
+
+
+
+
+
+h1{
+            display: inline-block;
+            /* 이걸하니까 어떻게 크기가 딱 작아지지...... */
+            padding: 10px 20px;
+            background: #eee;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+
+
+
+i = 0     10
+i = 1     10
+

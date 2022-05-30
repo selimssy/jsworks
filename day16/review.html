@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    
+    <script>
+
+        // 변수, 자료형(숫자, 문자, 불리언, 배열, 함수, 객체)
+
+        let x = 10;
+        x = true
+        x = "안녕"
+        x = [10, 20, 30]
+        console.log(typeof(x))
+
+        console.log(x);
+
+
+        // 반복 - 1부터 10까지 출력하세요
+        for(let i = 1; i <= 10; i++){
+            console.log(i)
+            console.log(i)   // 여기서 출력하면 나오고 for문 밖에서 하면 안나온다!
+        }
+
+
+        let a = 0
+        for(a = 1; a <= 10; a++){
+            console.log(a)
+        }
+        console.log(a)   // 11  (여기서 출력하면 나온다 / 11로 증가하고 못들어가고 탈출)
+
+
+
+
+        // 1부터 5까지 배열에 저장하고 출력
+
+        // 방법1
+        let number1 = [1, 2, 3, 4, 5]
+
+        for(i = 0; i < number1.length; i++){
+            console.log(number1[i])
+        }
+
+
+
+        // 방법2
+
+        let number2 = new Array(5)
+
+
+        // number2[0] = 1
+        // number2[1] = 2
+        // number2[2] = 3
+        // number2[3] = 4
+        // number2[4] = 5
+
+        for(i = 0; i < number2.length; i++){    // 이렇게하면 Array(5)에 따라 
+                                                // 5개 들어간다!
+            number2[i] = i + 1;
+        }
+        console.log(number2)
+
+
+
+
+
+
+        // 1부터 10까지의 수 중 짝수를 저장하고 출력
+        //방법1
+        array1 = [2, 4, 6, 8, 10]
+        for(i = 0; i < array1.length; i++){
+            console.log(array1[i])
+        }
+
+
+
+        //방법2
+        let array2 = new Array(5)
+
+        // i = 0, 값 = 2
+        // 1  4
+        // 2  6
+        // 3  8
+        // 4  10
+
+        for(i = 0; i < array2.length; i++){
+            array2[i] = (i+1)*2
+            // t는 2 * i + 2로 했다
+        }
+        console.log(array2)
+
+      
+
+
+
+    </script>
+
+
+</body>
+</html>

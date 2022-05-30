@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>splice()함수</title>
+</head>
+<body>
+    <script>
+
+        let animal = ["bear", "chicken", "dog", "horse"]
+
+
+        // 특정 인덱스에서 삭제
+        // splice(인덱스, 삭제 개수, "추가할 것")
+        // delete animal["dog"] 이렇게도 할 수 있지만
+        animal.splice(2,1)  // 2번 인덱스에서 1개 삭제
+
+        for(let i in animal){
+            console.log(animal[i])    // bear  chicken   horse
+        }
+
+
+
+        // 특정 인덱스에 추가
+        // animal[1] = "pig" 이렇게도 할 수 있지만
+        animal.splice(1, 0, "pig")
+        
+        console.log(animal)      // ['bear', 'pig', 'chicken', 'horse']
+
+
+
+
+
+
+        // contact() -  두 배열을 합치는 함수
+        // join() - 두 배열을 연결하는 함수
+
+        let number = [1 ,2 ,3]
+        let char = ["a", "b", "c"]
+
+        let newli = number.concat(char)
+        console.log(newli)   // [1, 2, 3, 'a', 'b', 'c']
+
+        let newli2 = char.concat(number)
+        console.log(newli2)   // ['a', 'b', 'c', 1, 2, 3]
+
+
+
+
+
+        // join("지정문자")  : 배열 내 요소들을 지정한 문자로 구분
+        document.write(number.join("-"))     // 1-2-3
+        document.write("<br>")
+        document.write(number.join("/"))     // 1/2/3
+        document.write("<br>")
+        document.write(number.join(", "))     // 1, 2, 3
+        document.write("<br>")
+        document.write(number.join())     // 1,2,3(기본값은 띄어쓰기없이 콜론(,))    
+        
+
+ 
+    </script>
+</body>
+</html>
