@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 함수</title>
+    <script>
+        window.onload = function(){
+            // let pic = document.getElementById("pic")
+            let pic = document.querySelector("#pic")
+
+
+
+            // <명시적함수로>
+            // pic.onclick  = changePic;   // 함수 호출 - 괄호 쓰지 않는다!
+
+            // function changePic(){
+            //     pic.src = "images/cup-2.png"
+            // }
+
+
+
+            // <실행함수로(+ toggle방식)>
+            let sw = false;     // 상태 저장하는 변수
+                                // 스위치 꺼짐
+
+            pic.onclick = function(){
+                if(sw == false){
+                    pic.src = "images/cup-2.png"
+                    sw = true;   // 스위치 켜짐
+                }
+                else{  // sw == true
+                    pic.src = "images/cup-1.png"
+                    sw = false;   // 그림1이 되면 스위치 다시 꺼짐
+                }
+                
+            }
+        }
+
+    </script>
+    
+</head>
+<body>
+    
+
+
+    <!-- 자바스크립트의 객체의 이벤트함수로 이벤트 구현 -->
+    <div>
+        <img src="./images/cup-1.png" id="pic" alt = "붉은색 찻잔">
+    </div>
+
+    
+
+
+</body>
+</html>

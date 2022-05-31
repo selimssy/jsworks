@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info 객체만들기</title>
+</head>
+<body>
+    <script>
+
+        function Info(subject, credit){
+            this.subject = subject;
+            this.credit = credit;
+            this.printOut = function(){
+                return this.subject + ", " + this.credit + "학점"
+            }
+        }
+
+
+        let sub1 = new Info("html", 1)
+        console.log(sub1.subject)   // html
+        console.log(sub1.credit)    // 1
+        console.log(sub1.printOut())    // html, 1학점
+
+
+        let sub2 = new Info("css", 2)
+        console.log(sub2.subject)   // css
+        console.log(sub2.credit)    // 2
+        console.log(sub2.printOut())    // css, 2학점
+
+        // 위에 방식은 연습용이나 확인용 / 실질적으로 자료 출력,관리는 배열로!
+
+
+        // 객체 배열
+        let subjectList = [sub1, sub2]
+
+
+    </script>
+</body>
+</html>

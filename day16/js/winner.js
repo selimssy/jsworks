@@ -29,8 +29,7 @@ else{
                 i--
         }
         
-        // if(winners[i] == winners[i - 1])
-        //     continue  이 방법도 써보고싶다
+       
 
     }
 

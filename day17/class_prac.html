@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class</title>
+</head>
+<body>
+    
+    <script>
+
+        function Person(name, age, isMerried){
+            this.name  = name;    // this : 멤버 변수
+            this.age = age;
+            this.isMerried = isMerried;
+
+            this.info = function(){
+                if(this.isMerried == true)
+                    document.write(this.name + "는(은) 기혼입니다<br>");
+                else
+                    document.write(this.name + "는(은) 미혼입니다<br>");
+
+            }
+        }
+
+
+
+        let son = new Person("손흥민", 29, false);
+        let chu = new Person("추신수", 39, true)
+        let choi = new Person("최민정", 25, false)
+
+        son.info()
+        document.write(son.name)
+        document.write(son.age)
+
+        // 객체 배열
+        let person = [son, chu, choi]
+        console.log(person)
+        console.log(person[0])
+        console.log(person[2].name)
+
+    </script>
+
+
+</body>
+</html>

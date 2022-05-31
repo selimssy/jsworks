@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array 객체의 함수</title>
+    <script>
+
+
+        // toSting() : 배열 객체를 문자열로 변환
+
+
+        let alphabet = ["a", "b", "c", "d", "e"]
+        console.log(alphabet);  // ['a', 'b', 'c', 'd', 'e']
+        console.log(alphabet.toString())  // a,b,c,d,e
+
+
+
+        // 이건 숫자, 문자, 객체
+        for(let i in alphabet){
+            console.log(alphabet[i])    
+        }                                  /*  a
+                                               b
+                                               c
+                                               d
+                                               e    */
+
+
+        document.write(alphabet + "<br>");
+        document.write(alphabet.toString()  + "<br>");
+        for(i = 0; i < alphabet.length; i++){
+            document.write(alphabet[i] + " ")
+        }
+        
+
+
+
+
+
+        // sort()
+        let num = [15, 33, 4, 11, 54, 99];
+
+        num.sort(function(a, b){
+            return a - b;
+        })
+        console.log(num.toString())    // 4,11,15,33,54,99
+
+
+        num.sort(function(a, b){return b - a})
+        console.log(num.toString())    // 99,54,33,15,11,4
+
+
+
+
+
+
+
+
+
+        // reverse()
+        let letter = ["a", "b", "c", "d", "e"]
+        console.log(letter.reverse())   // ['e', 'd', 'c', 'b', 'a']
+
+
+        
+ 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

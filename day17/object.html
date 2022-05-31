@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내장 객체</title>
+</head>
+<body>
+    <script>
+
+        
+        // substring(a,b)  :  인덱스번호 a부터 b 전까지
+
+        let str1 = "Javascript";
+     
+        console.log(str1.substring(4,9))   // scrip
+        console.log(str1.substring(0,5))   // Javas
+        console.log(str1.substring(4))   // script(4번부터 끝까지!!)
+
+
+
+
+
+
+
+
+
+        // split("구분기호") :  구분기호 기준으로 분리히 각각을 배열로 저장
+        let str2 = "Javascript_ JQuery"
+        let division = str2.split("_")    // "_" 앞뒤로 문자열을 나눠 각각(Javascript, JQuery)을 배열로 저장
+        console.log(division)  // ['Javascript', ' JQuery']
+
+        let animal = "dog cat horse cow"
+        let animalList = animal.split(" ")  // 공백 문자를 기준으로 문자열 분할해서 배열로 저장
+        console.log(animalList)    // ['dog', 'cat', 'horse', 'cow']
+        console.log(animalList[0])   // dog
+        for(let i = 0; i < animalList.length; i++){
+            document.write(animalList[i] + "<br>")
+        }
+
+        // <for~ in문으로 할 때>
+        // for(let i in animalList){
+        //     document.write(animalList[i] + "<br>")
+        // }
+
+
+        // let animal = "dog, cat, horse, cow"  이렇게 되어있으면
+        // let animalList = animal.split(", ")  이렇게 콤마와 공백 모두 넣어서 정확하게 입력해야!!
+
+
+
+
+
+
+
+
+
+
+        // replace()   :   특정 문자를 변경(대체)
+        let str3 = "Javascript";
+        console.log(str3.replace("Java", "jQuery"))   // jQueryscript
+
+
+
+
+
+
+
+        
+
+
+        // trim()  :  공백 제거
+        let str4 = "     Javascript"
+        console.log(str4.trim())    // Javascript
+
+
+
+
+
+
+
+
+        // toLowerCase()   :   소문자로 변경
+        // toUpperCase()   :   대문자로 변경
+        let word = "Thank You!"
+        console.log(word.toLowerCase());   // thank you!
+        console.log(word.toUpperCase());   // THANK YOU!
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>queryselector() 함수 사용</title>
+    
+</head>
+<body>
+    <p>이름 : <input type="text" id="myText" value="오상식" disabled></p>   <!--value값으로 미리 들어가있다-->
+                                                                 <!-- disable 하면 사용불가 -->
+    <p>클릭하면 이름이 변경됩니다.</p>
+    <button onclick="myfunction()">클릭</button>
+
+
+
+
+
+    <script>
+        let names = []
+        names[0] = "최정보"
+        names[1] = "이지능"
+        names[2] = "오상식2"
+        names[3] = "최44"
+
+        randnum = Math.floor(Math.random() * names.length)
+
+
+
+
+        function myfunction(){
+            // document.getElementById("myText").value = "최정보";
+            // document.querySelector("#myText").value = "이지능";
+
+            document.querySelector("#myText").value = names[randnum]; 
+            // 반복문도 넣어보자
+            
+        }
+        
+
+    </script>
+
+    
+</body>
+</html>

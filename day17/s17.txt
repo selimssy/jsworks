@@ -1,0 +1,14 @@
+prac_date.html
+class_prac.html
+Book.html
+builtIn.html
+info.html
+object.html
+arrayFunction.html
+math.html
+queryselector.html
+queryselectorAll.html
+changePic.html
+changePic2.html
+addeventListener.html
+lotto.html(exercise폴더)
