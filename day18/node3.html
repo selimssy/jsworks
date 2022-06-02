@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상대 위치로 선택하는 방법</title>
+    <script>
+        window.onload = function(){
+
+            let gnb = document.getElementById("gnb")
+            console.log(gnb.parentNode)   // div
+            console.log(gnb.children[0])    // ul
+            console.log(gnb.children[0].children[0])    // <li class="first">내용1</li> 
+            console.log(gnb.children[0].children[0].nextElementSibling)   // <li>내용2</li>
+            console.log(gnb.children[0].children[0].previousElementSibling)  // null
+            console.log(gnb.children[0].children[2])  // <li>내용3</li>
+            console.log(gnb.children[0].children[2].previousElementSibling)  // <li>내용2</li>
+            
+            // 선택요소의 자식노드 중 첫번째 노드
+            console.log(gnb.children[0].firstChild)   // #text라 나온다..
+            console.log(gnb.children[0].lastChild)    // #text
+            console.log(gnb.children[0].tagName)  // UL
+
+            // nodeValue : 선택 요소의 값
+            console.log(gnb.children[0].children[0].firstChild.nodeValue)   // 내용1
+
+            // nodetype : 1이면 요소, 2면 속성, 3이면 텍스트
+            console.log(gnb.children[0].children[0].nodeType)   // 1
+
+            console.log(gnb.id)  // gnb
+            console.log(gnb.children[0].children[0].className)   // first
+            
+
+
+
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <nav id="gnb">
+            <ul>
+                <li class="first">내용1</li>
+                <li>내용2</li>
+                <li>내용3</li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

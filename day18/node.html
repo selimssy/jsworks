@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>node 추가하기</title>
+    <script>
+        function myFunction(){
+            let newItem = document.createElement("li");
+            let textNode = document.createTextNode("Water")
+            newItem.appendChild(textNode);   // li에 water를 연결
+            // <li>Water</li> 이거를 해준 것
+
+            let list = document.getElementById("MyList");
+
+            // list.insertBefore(newItem, list.childNodes[0])   // 0번째에 넣고 싶을 때
+
+            list.appendChild(newItem)   // water가 이미 추가되있는 newItem이 list에 추가된다
+                                         // li를 태그를 ul에 추가
+        }                              
+    </script>
+</head>
+<body>
+    <ul id="MyList">
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+    <p>Click the button to insert an item to the list</p>
+    <!-- <button onclick="myFunction()">Try It</button>  여기서 추가작업!> -->
+
+    <!-- this.onclick='' 은 myFunction()이 한 번만 실행되도록! --> 
+    <!-- ++ 쌍다안에 ''로, 구분 위해 ; 작업 -->
+    <button onclick="myFunction(); this.onclick='' ">Try It</button>
+</body>
+</html>

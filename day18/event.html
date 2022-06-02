@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event 함수</title>
+    <style>
+        div{
+            height: 100px;
+            background: green;
+            margin-top: 20px;
+            color: #fff;
+        }
+    </style>
+    <script>
+
+        window.onload = function(){
+            let bt = document.getElementById("bt");
+            let area = document.getElementById("area");
+
+            bt.onclick = function(event){
+                console.log(event.target)  // 이벤트 발생시킨 객체  <button id="bt">클릭</button>
+                console.log(event.type)     // 이벤트 유형 -  click
+                console.log(event.clientX)  // 이벤트 발생한 브라우저 내 x좌표 픽셀(이 경우에는 클릭한 커서 위치)  -  16
+                console.log(event.clientY)  // 이벤트 발생한 브라우저 내 y좌표 픽셀 - 20
+                console.log(event.screenX)  // 이벤트 발생한 모니터의 x좌표(브라우저 창 오른쪽 끝에 갖다노면 엄청 크게, 왼쪽에 두면 작게)  -  1172
+                console.log(event.screenY)  // 이벤트 발생한 모니터의 y좌표 - 100
+            }
+
+
+        
+            area.onmousedown = function(){
+                console.log(event.button)
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+    <button id="bt">클릭</button>
+    <div id="area">여기에 마우스 왼쪽, 가운데, 우클릭 버튼 클릭</div>
+</body>
+</html>

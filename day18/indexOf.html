@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단 검색 구현</title>
+</head>
+<body>
+    <!-- '안녕'이 있으면 '안녕하세요’ 출력
+    시간('시' 또는 '분')을 검색하면 ‘현재 시간’ 출력
+    ‘잘있어’ 또는 ‘잘가’를 검색하면
+    '안녕히 가세요'를 출력하고 프로그램이 종료됨
+    찾는 단어가 없으면 “모르는 단어입니다’ 출력 -->
+
+
+    <script>
+
+        let str = "자바스크립트"
+        console.log(str.indexOf("스"))    // 2
+
+
+
+
+
+
+        while(true){
+            let input = prompt("단어를 입력하세요");
+
+            if(input.indexOf("안녕") >= 0){  // 일치하면 인덱스 0 이상
+                alert("안녕하세요")}
+            // 안녕 입력하면 안녕하세요 출력하고 여기서 다시 첫 번째줄 input으로 돌아간다!
+                
+
+            else if(input.indexOf("시") >= 0 || input.indexOf("분") >= 0){
+                const date = new Date();
+                let hours = date.getHours()
+                let minute = date.getMinutes()           
+
+                alert("현재 시각은 " + hours + "시 " + minute + "분 입니다.")              
+                }
+
+            else if(input.indexOf("잘 가") >= 0){
+                alert("안녕히 가세요.")
+                break;
+                }
+
+            else{
+                alert("모르는 단어입니다.")
+            }
+            }
+
+    </script>
+
+
+</body>
+</html>

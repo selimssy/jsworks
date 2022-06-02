@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{text-align: center; }
+        h2{padding-top: 20px;}
+        #display{color: blue;}
+    </style>
+</head>
+<body>
+    <section>
+        <h2>디지털 시계</h2>
+        <p id="display"></p>
+        <button onclick = "myStop()">중지</button>
+    </section>
+
+    <script>
+
+        let timer = setInterval(watch, 1000)        // 1초마다 watch() 작동
+
+        function watch(){
+            const date = new Date()
+            let now = date.toLocaleTimeString();
+            document.getElementById("display").innerHTML = now;
+            }
+
+        function myStop(){
+            clearInterval(timer);
+        }
+
+    </script>
+
+
+</body>
+</html>

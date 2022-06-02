@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시, 분, 초 계산</title>
+</head>
+<body>
+    <h3>시간(초)를 시, 분, 초로 환산</h3>
+    <p id="display"></p>
+
+    <script>
+
+        let time = 10000;  // 초를 설정
+        let min = 0;    // 분
+        let sec = 0;    // 초
+        let hour = 0;   // 시간
+
+        min = Math.floor(time / 60);  // 분만 잘라서 계산(몫)
+        sec = Math.floor(time % 60);  // 초(나머지)
+        hour = Math.floor(min / 60);
+        min = min % 60;  // 다시 바꿔줘야(위의 min은 sec 계산을 위해 저렇게 먼저 해줘야!)
+
+
+        // console.log(hour + "시간 " + min + "분 " + sec + "초")
+
+        //innerText와 innerHTML은 같은 기능
+        let result = hour + "시간 " + min + "분 " + sec + "초"
+        document.getElementById("display").innerText = result
+    </script>
+</body>
+</html>
