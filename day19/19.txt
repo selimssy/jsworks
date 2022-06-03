@@ -1,0 +1,91 @@
+// id가 아니라 name속성으로 처리해서 위에 저렇게 id 안가져와도 된다!
+    // id로 하는 것 같은데..........  id바꾸면 인식 못한다......근데 왜 let billingName = document.querySelector("#billingName");
+이런걸 안해도되지........
+
+
+
+
+
+required 뭐였지ㅠ
+
+
+
+
+
+
+let selectText = selectMenu.options[selectMenu.selectedIndex].innerText;
+이거 하나도 모르겠다......options.........selectedIndex...............[ ] 이건 인덱스 개념인가?
+
+
+
+
+
+
+
+
+노드 추가(태그요소) : createElement( ) 하고 appendChild( )
+노드 추가(속성요소) : createAttribute( ) 하고 setAttributeNode( )
+
+노드 삭제(태그 요소) : removeChild( )
+노드 삭제(속성 요소) : removeAttribute( )
+
+
+
+근데 setattribute가 훨씬 간단한 것 같은데 createAttribute( ) 하고 setAttributeNode( ) 랑 뭐가다르지,,
+ → createAttribute( ) 하고 setAttributeNode( ) 를 간단하게 하는게 setattribute래!!!
+
+
+setAttribute(속성, 속성값)
+
+
+
+
+
+
+
+
+함수 안에서 return 명령문을 만날경우 함수의 실행은 그 지점에서 중단된대
+
+return false
+
+: bookCode.value 값이 들어가 있지 않으면 submit을 하지 않고 
+fasle로 리턴한다는 뜻(return null과 아주 조금 차이가 있다.)이다.
+
+
+
+
+
+
+login.id.focus()    // 이런 경로 공부하자ㅠ
+
+
+
+value.length로 입력값의 글자수 확인가능하다보다
+
+
+
+add() : 객체 추가함수
+ Option(i, i) 잘 모르겠다ㅠㅠ
+→ new Option(text, value, defaultSelected, selected)
+  그니까 Option(i * 2, i) 이렇게 한다고 하면 보여지는건 4030년 막 이러는데 실제 컴퓨터에 전송되는건
+2015년이라는 뜻인가
+
+
+
+
+오늘 하루 보지 않기 관련된 것:
+cookie, session
+
+
+
+"_blank"를 크기 조정해서 열 수는 없나?
+
+
+
+
+
+
+자바스크립트 중간에 빠진것도 있대.............ㅠ 공부하쟈ㅠㅠ
+
+
+

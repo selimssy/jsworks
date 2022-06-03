@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 추가</title>
+    <script>
+
+    </script>
+    <script>
+        window.onload = function(){
+
+
+            //setAttribute(속성, 속성값)
+
+            function popup(){
+                let div = document.createElement("div")
+                let a = document.createElement("a")
+                let txt = document.createTextNode("아이콕스")
+                a.appendChild(txt)
+                a.setAttribute("href", "http://icoxpublish.com")
+                a.setAttribute("target", "_blank")
+                a.setAttribute("title", "새창")
+                div.appendChild(a)
+                document.body.appendChild(div)
+            }
+
+            bt.onclick = popup
+
+        }
+    </script>
+</head>
+<body>
+    <button id="bt">요소 생성</button>
+</body>
+</html>

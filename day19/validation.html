@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유효성 검사</title>
+    <script>
+
+       
+        function checklogin(){
+            // document.login.id.value이렇게 해도 된다
+            let login = document.login;    // 폼 이름에 변수 할당
+            let id = login.id;   // id 변수
+            let pw = login.pw;    // password 변수
+
+            if(id.value == "" || id.value.length < 4 || id.value.length > 15){    // 교재에는 if(!login.id.value)
+                alert("아이디를 확인해주세요.(아이디는 4자~15자까지)")
+                id.focus()    // 이런 경로 공부하자ㅠ    //document.login.id.focus
+                return false;  // 함수를 종료하고 전송을 막아준다
+            }
+            else if(pw.value == ""){
+                alert("비밀번호를 입력해주세요.")
+                pw.focus()        //document.login.pw.focus
+                return false;
+            }
+            else{
+                login.submit();
+            }
+        }
+        
+
+    </script>
+</head>
+<body>
+    <form action="login.jsp" method="post" name="login">
+        <div>
+            <label for="id">아이디</label><input type="text" name="id" id="id">
+        </div>
+
+        <div>
+            <label for="pw">비밀번호</label><input type="password" name="pw" id="pw">
+        </div>
+
+        <div><input type="submit" value="확인" onclick="checklogin()"></div>
+        
+    </form>
+</body>
+</html>
