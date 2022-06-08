@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주요 탐색 함수</title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            // children() : 자식 요소 선택
+            // parent() : 부모 요소
+            // next() : 다음 요소
+            // filter() : 그 요소 중 해당 요소 
+            // find() : 자식 요소 중 해당 요소
+
+
+
+            $("#m1").children().css("border", "2px solid red")  // m1의 자식들에게 스타일적용
+            $("#m2").children().children("span").css("border", "2px solid orange") 
+            // 두다리건너 자식 중 span 태그에게 스타일 적용
+
+            $("#m2 span").parent().css("border", "3px solid black")
+            // m2 span의 부모에게 적용
+
+            $("#m4 > span.m").nextUntil("em").css("border", "3px solid green")
+
+
+            $("#m5 > span").filter(".m").css("border", "3px solid blue")
+
+            $("#m6 > div").has("span").css("border", "3px solid navy")
+
+            $("#m6 div.d1").next().css("border", "3px solid pink")
+
+        })
+    </script>
+    <style>
+        *{margin: 5px;}    
+        /* 이러니까 전체 각각요소들의 간격이 벌어지네... */
+    </style>
+</head>
+<body>
+
+
+
+<div id="m1">
+    <a href="#">내용1_1</a><span>내용1_2</span>
+</div>
+
+
+
+<div id="m2">
+        <div>
+            <a href="#">내용2_1</a><span>내용2_2</span>
+        </div>
+</div>
+
+
+
+<div id="m3">
+    <div><span>내용3_1</span></div>
+</div>
+
+
+
+
+<div id="m4">
+    <span class="m">내용4_1</span><span>내용4_2</span><span>내용4_3</span><em>내용4_4</em>
+</div>
+
+
+
+
+<div id="m5">
+    <span class="m">내용5_1</span><span>내용5_2</span><span>내용5_3</span>
+</div>
+
+
+
+
+<div id="m6">
+    <div class="d1">
+        <span>내용6_1</span>
+    </div>
+    <div>내용6_2</div>
+</div>
+
+
+
+
+
+</body>
+</html>

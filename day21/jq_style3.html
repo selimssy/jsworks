@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offset(), position() 함수</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        #outer{
+            width: 500px;
+            height: 500px;
+            margin: 50px;
+            position: relative;
+            background: #f60;
+        }
+
+        #inner{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 50px;
+            left: 80px;           
+            background: #ccc;
+        }
+
+
+    </style>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+
+        // offset() : 브라우저 기준 절대적 위치(top, left)를 취득, 변경
+        // position() : 부모요소를 기준으로한 위치(top, left)를 취득, 변경
+
+
+        $(function(){
+
+            console.log($("#inner").offset().left)      // 130  (margin 50px + left 80px)
+            console.log($("#inner").offset().top)       // 100  (margin 50px + top 50px)
+            console.log($("#inner").position().left)    // 80   (left 80px)
+            console.log($("#inner").position().top)     // 50   (top 50px)
+
+        })
+
+    </script>
+
+       
+</head>
+<body>
+    
+    <div id="outer">
+        <div id="inner">내용</div>
+    </div>
+
+
+</body>
+</html>

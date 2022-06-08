@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>val() 함수</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+
+        // 기본 실행 환경
+        $(function(){
+            $("button").click(function(){
+                let text = $("#t_input").val()   // 텍스트 상자에 입력한 값
+                document.getElementById("demo").innerText = text;
+                // $("#demo").val(text)   // 이건 내부요소 자체가 value 속성을 안써서 안되는것같다
+                $("#t_output").val(text)  // 이러면 $("#t_output")에 text의 value값이 들어간다!
+            })
+        })
+
+    </script>
+</head>
+<body>
+    <input type="text" id="t_input">
+    <button type="button">입력</button>
+    <p id="demo"></p>
+    <p>결과 <input type="text" id="t_output" disabled></p>
+</body>
+</html>

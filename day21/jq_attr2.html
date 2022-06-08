@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attr() 함수</title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+
+        $(function(){
+            console.log($("#site > a:eq(0)") .attr("href"))   
+            // #site 자식의 a태그의 0번 인덱스  //http://www.daum.net
+
+            
+            $("#site > a:eq(1)").attr("href", "http://m.naver.com").text("네이버 모바일")
+            // 브라우저 상에서 텍스트가 "네이버 모바일"로 바뀌고 누르면 모바일버젼 네이버창이 뜬다.
+
+
+
+            // $("#site a").attr("title", "새창")  // 그냥 하는 방식
+
+            $("#site a").attr("title", function(){     // 콜백함수 방식
+                return "새창"
+            })   
+           
+            // a 태그에 title 속성 : 링크에 마우스를 올렸을 때 그에 대한 설명을 띄워준다
+        })
+
+    </script>
+</head>
+<body>
+    <div id="site">
+        <a href="http://www.daum.net" target="_blank">다음</a>
+        <a href="http://www.naver.com" target="_blank">네이버</a>
+        <a href="http://www.nate.com" target="_blank">네이트</a>
+    </div>
+</body>
+</html>

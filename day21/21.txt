@@ -1,0 +1,179 @@
+j제이쿼리파일 매일 복사해서 넣어야되는듯..?
+
+
+
+
+
+제이쿼리 선택자 쓸 때 홀따 쌍따 다 상관없다!
+
+
+
+$(document).ready(function(){
+     $("p").css("color", "red")
+})
+
+
+
+주요함수
+.click(funciton(){})
+.css("color", "red")
+.text("문자열")
+.html("html 태그")
+.appendl("html 태그")
+
+
+
+
+
+
+
+자바스크립트에서 폼같은데서 .value가 제이쿼리에선 .val 이다!!
+.val( ) : 입력상자의 값(value)
+
+
+
+CDN방식: 
+
+https://code.jquery.com 여기 들어가서
+jQuery 3.x 중에서 원하는거 클릭해서 복사해서 사용
+
+구글:
+3.x snippet: 이거
+
+
+
+
+
+
+
+
+p태그에 아래처럼 하면 적용이 안되는데,
+$("#demo").val(text)   이건 p 태그의 내부요소 자체가 value 속성을 안써서 안되는것같다
+
+
+
+
+교재 p/463
+
+
+
+eq는 번호
+gt는 보다 크면
+lt는 보다 작으면
+root는 전체?
+
+
+
+
+
+
+
+
+
+span.m 이 뭐지.....
+
+
+
+
+$("#m2").children("p").addBack().css("border", "3px solid orange")
+이거는 $("#m2").children("p")로 인해 p를 선택하고 addBack()으로 인해 이전 선택요소 $("#m2")를
+선택한다는 뜻인가..............
+
+
+
+
+
+자식 선택하는거 > + 이것좀 빨리 공부ㅠㅠ
+
+
+
+
+
+
+filter( ) : 그 요소 중 해당 요소    ex) 여러 div 중 id가 m1인 div를 찾고싶을 때
+find( ) : 자식 요소 중 해당 요소    ex) div의 여러 자식들 중 id가 m1인 자식을 찾고싶을 때
+
+
+
+
+배열 요소
+ul li
+each( ) : 일치하는 각 요소에 대해 실행
+.map( ) : 특정 조건에 맞는 요소에 대해 실행
+
+
+
+
+
+
+배열 주요 함수 - map( )
+: 배열내 요소 각각에 대하여 주어진 함수를 호출한 결과를 모아서 새로운 배열을 반환
+
+
+
+
+each( )함수 어떨 때 쓰는건지 좀 더 자세히ㅠ
+$.each(city, function(index, value 어떨땐 value고 어떨땐 element고...ㅠ item도.......
+$.each(subjectInfo, function(key, value)) 이것도 있네ㅠ
+
+
+
+
+$.each( ){}
+$(selector).each( ){}
+
+
+
+
+
+
+
+
+$.attr( ) - 속성을 선택, 생성, 변경
+
+
+class도 속성이다
+
+
+
+자바스크립트 : map( )
+제이쿼리 $.map( )
+
+자바스크립트 : forEach( )
+제이쿼리 $.each( )
+
+
+
+
+
+forEach.html에서
+왜 function myFunction(value, index)  이렇게 해야   0 : 참외 이 순서로 나오지......
+
+
+
+
+
+
+
+
+.join(" ") 얘는 또 뭐냐,,,
+연결하는 것 같은데,,,
+
+
+
+콜백함수 설명!
+https://blog.naver.com/PostView.nhn?blogId=hadaboni80&logNo=221706105722&categoryNo=31&parentCategoryNo=0
+
+
+
+
+
+콜백함수랑 each함수랑 역할 헷갈린다ㅠ 정리하자ㅠ
+
+
+
+
+
+
+
+a 태그에 title 속성을 추가하면, 링크에 마우스를 올렸을 때 그에 대한 설명을 띄워줍니다. 

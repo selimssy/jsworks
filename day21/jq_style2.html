@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>width, height 관련 함수</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        div{
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid #eee;
+            background: #ff6600;
+        }
+    </style>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+
+        $(function(){
+
+            $("div").width(150).height(150)
+            console.log("width : " + $("div").width())     
+            // 그냥 width()만 하면 너비값 취득     // width : 150(요소의 너비값만)
+
+            console.log("height : " + $("div").height())   // height : 150
+
+            console.log("innerWidth : " + $("div").innerWidth())    
+            // 요소너비(150) + 양쪽 padding값(20px 2개) = 190px      // innerWidth : 190
+
+            console.log("innerHeight : " + $("div").innerHeight())   // innerHeight : 190
+
+            console.log("outerWidth : " + $("div").outerWidth())
+            // 요소너비(150) + 양쪽 padding값 + border값  = 194px      // outerWidth : 194
+
+ 
+            console.log("outerwidth : " + $("div").outerWidth(true))   
+            // 요소너비(150) + 양쪽 padding값 + border값 + 양쪽 margin값(20px 2개) = 234px      // outerWidth : 194
+            
+        })
+
+    </script>
+</head>
+<body>
+    
+    <div>내용</div>
+
+
+</body>
+</html>

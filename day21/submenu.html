@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서브메뉴 만들기</title>
+    <style>
+        /* .wrap .ul1{display: none;} */
+        .wrap a{text-decoration: none;}
+    </style>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+
+        $(function(){
+            // 학교 안내
+            $(".btn1 a").on("mouseover", function(){
+                let a = $(this);   // 이벤트가 일어난 대상
+                a.parent().next().show()
+                a.css("background", "pink")
+            })
+
+
+            $(".btn1 a").on("mouseout", function(){
+                let a = $(this);   // 이벤트가 일어난 대상
+                a.parent().next().hide()
+                a.css("background", "white")
+            })
+
+
+            $(".ul1").on("mouseover", function(){
+                $(this).show
+            })
+            // 이거 마우스대도 안없어지게 하고싶다
+            // 저번에 css로 했던거는 안없어지나 봐보자
+
+        })
+
+    </script>
+</head>
+<body>
+    
+    <div class="wrap">
+        <p class="btn1">
+            <a href="#">학교안내</a>
+        </p>
+        <ul class="ul1">
+            <li>학교장인사말</li>
+            <li>학교연혁</li>
+            <li>찾아오시는길</li>
+        </ul>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text() 함수</title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+
+        $(function(){
+            
+            // 선택한 요소의 자식 html을 취득, 생성, 변경
+
+
+            console.log($("#m1").html())    // <strong>jQuery</strong>
+            $("#m1").html("<em>html</em>")   // 굵은글씨였던 html이 이탤릭체로 바뀜
+            $("#m2 > div").html(function(){
+                return "<strong>" + $(this).text() + "</strong>"   // 아래 3개 다 굵은글씨로 변경
+            })
+                
+            
+        })
+
+    </script>
+</head>
+<body>
+    <div id="m1">
+        <strong>jQuery</strong>
+    </div>
+
+
+    <div id="m2">
+        <div><em>html</em></div>
+        <div><em>css</em></div>
+        <div><em>javascript</em></div>
+    </div>
+</body>
+</html>

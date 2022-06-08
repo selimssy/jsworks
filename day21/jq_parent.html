@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parent() 함수</title>
+    <style>
+        .content{width: 800px; margin: 0 auto;}
+        .wrap *{  /* wrap, ul, li, span 모두에 적용 */
+            display: block;  
+            /* 원래는 li (direct parent) 옆에 있었는데 이걸 하니까 span이 줄바꿈되서 li 내부에 배치된다 */
+            list-style: none;
+            border: 2px solid #ddd;
+            margin: 15px;
+            padding: 10px;
+        }
+    </style>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+
+        $(function(){
+
+            $("span").parent().css({"color" : "red", "border" : "2px solid blue"})  // span은 왜 빨갛지...
+
+            $("li").has("span").next().css("border", "2px solid red")
+            // $("li").eq(1).css("border", "2px solid red")
+            // $("li.a").next().css("border", "2px solid red")
+
+            // li로만 해도 되긴 하는데 나중에 복잡해질 수 있으니까 ul > li로 해도 좋을 것 같다
+        })
+
+    </script>
+</head>
+<body>
+    <div class="content">
+        <div class="wrap">
+            <ul>ul (grandparent)
+                <li class="a">li (direct parent)
+                    <span>span</span>
+                </li>
+                <li>li </li>
+                <li>li </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

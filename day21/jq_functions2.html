@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주요 탐색 함수</title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+
+        $(function(){
+
+
+            // add() : 모두 선택
+            // addBack() : 이전요소 모두 선택
+            // find() : 자식 요소 중 해당 요소
+            // filter( ) : 그 요소 중 해당 요소 
+            // end() : 실행이 끝나면 다시 처음 선택자에서 시작
+            // is() : 요소가 존재하는지 판별
+
+            $("#m1 > div").add("#m1 > p").css("border", "3px solid red")
+            // div와 p를 선택
+
+            $("#m2").children("p").addBack().css("border", "3px solid orange")
+            //p요소와 이전 선택요소 div를 선택
+
+            // $("#m3").find("span.m").css("border", "3px solid green").end().find("em").css("border", "3px solid yellow")
+            // end를 만나면 처음 선택자 $("#m3")로 돌아가서 $("#m3").find("em").css("border", "3px solid yellow") 실행
+            
+
+            $("#m3 span").filter(".m").css("border", "3px solid pink")
+            $("#m3").find("#e").css("border", "3px solid green")
+            $("#m3").find("#ee").css("border", "3px solid blue")
+
+            
+            if($("#m4").children().is("p")){  // #m4의 자녀 중 p태그가 있으면 저렇게 출력
+                console.log("p요소가 존재합니다.")
+            }
+        })
+
+
+    </script>
+    <style>
+        *{margin: 5px;}    
+    </style>
+</head>
+<body>
+    
+
+<div id="m1">
+    <div>내용1_1</div><p>내용1_2</p>
+</div>
+
+
+
+<div id="m2">
+    <p>내용2</p>
+</div>
+
+
+
+<div id="m3">
+    <span class="m">내용3_1</span><span id="e">내용3_2</span><em id="ee">내용3_3</em>
+</div>
+
+
+
+<div id="m4">
+    <p>내용4</p>
+</div>
+
+
+</body>
+</html>
