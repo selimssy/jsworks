@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+   
+
+    <script>
+
+        // 첫째 줄에는 별 1개, 둘째 줄에는 별 2개, n번째 줄에는 별 n개 찍는 문제(1 <= n <= 20)
+
+        // for(let i = 1; i <= 20; i++){
+        //     for(let j=1; j<=i; j++){
+        //         document.write("*")
+        //     }
+        //     document.write("<br>")
+        // }
+
+
+
+
+
+
+        //위 문제와 동일 but 오른쪽을 기준으로 정렬
+
+        // 퍼온글) var div = document.createElement("DIV");
+        // div.style.width = "100%";
+        // div.style.textAlign = "right"; // Don't use "text-align".
+        
+        let star = ""
+
+        for(let i = 1; i <= 20; i++){
+            for(let j=1; j<=i; j++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+
+        // let text = document.getElementById("text")
+        // text.style.textAlign = "right"
+        // text.innerHTML = 1
+
+        // for문 안에 저거 어떻게 넣지..ㅠ
+        document.body.style.textAlign = "right"
+
+    </script>
+
+
+</body>
+</html>

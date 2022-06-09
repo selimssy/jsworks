@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 연결</title>
+    <style>
+        *{margin: 5px;}
+        .on{
+            background: #ff6600;
+            color: #fff;
+        }
+    </style>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#m1 button").on("click", function(){
+                alert("이벤트 연결1")
+            })
+
+            $("#m2").on("click", "button", function(){
+                alert("이벤트 연결2")
+            })
+
+            // 객체 리터럴 방식
+            $("#m3 button").on({
+                mouseenter: function(){$(this).toggleClass("on")},
+                mouseleave: function(){$(this).toggleClass("on")}
+                // mouseenter: function(){$(this).addClass("on")},
+                // mouseleave: function(){$(this).removeClass("on")}  이렇게 해도된다
+            })
+
+
+
+
+
+
+
+            // 함수 정의와 호출
+            function showEvent(){
+                alert("이벤트 연결3")
+            }
+
+            $("#m4 button").on("click", showEvent)
+
+
+
+
+            // 이벤트 제거
+            $("#m5 button").on("click", function(){
+                alert("이벤트 제거")
+            }).off()       // 이렇게 .off() 하면 만들어논 이벤트 실행 안된다
+                           // (alert("이벤트 제거") 이거 안뜬다)
+
+
+
+
+            
+            // 이벤트 한 번만 실행되도록(one)
+            $("#m6 button").one("click", function(){   // 여기서 on()이 아니라 one() 함수다!!
+                alert("알림창 한 번만 실행됨")
+            })  
+            // 첫 번째 클릭에만 알림창 뜨고 두 번째부턴 안 뜬다
+
+
+
+
+            $("#m7").on("click", function(){
+                // $("p", this).css("background", "#f00")   // $("p", this) 이건 또 뭐지
+                $("p").css("background", "#f00")
+            })
+
+        })
+    </script>
+</head>
+<body>
+    <div id="m1">
+        <button>클릭1</button>
+    </div>
+    <div id="m2">
+        <button>클릭2_1</button>
+        <button>클릭2_2</button>
+    </div>
+
+    <div id="m3">
+        <button>클릭3</button>
+    </div>
+
+    <div id="m4">
+        <button>클릭4</button>
+    </div>
+
+    <div id="m5">
+        <button>클릭5</button>
+    </div>
+
+    <div id="m6">
+        <button>클릭6</button>
+    </div>
+
+    <div id="m7">
+        <p>클릭7</p>
+    </div>
+</body>
+</html>

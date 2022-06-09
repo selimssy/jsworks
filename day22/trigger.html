@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 강제 실행</title>
+    <link rel="stylesheet" href="./css/trigger.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            // button 요소를 클릭하지 않아도 click 이벤트 강제 실행
+
+            $("button:eq(0)").on("click", function(){
+                $("#con1").toggleClass("on")
+            }).trigger("click")
+            // 창 켜자마자 실행된다
+
+            $("button:eq(1)").on("click", function(){
+                $("#con2").toggleClass("on")
+            }).trigger("click")
+            
+            $("button:eq(2)").on("click", function(){
+               $("button:eq(0)").trigger("click")
+               $("button:eq(1)").trigger("click")
+            })
+
+            // $("button:eq(2)").on("click", function(){
+            //    $("button:eq(0)").click()
+            //    $("button:eq(1)").click()
+            // })
+            //이것도 역할은 같은 것 같다
+
+        })
+    </script>
+</head>
+<body>
+    <div id="con1"></div>
+    <div id="con2"></div>
+    <button>클릭1</button>
+    <button>클릭2</button>
+    <button>all</button>
+</body>
+</html>

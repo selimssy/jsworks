@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg{
+            padding: 40px;
+            margin-bottom: 40px;
+            background: #ccc;
+        }
+
+        .inner{
+            padding: 20px;
+            background: #999;
+        }
+    </style>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+
+            $(".wrap1").mouseover(function(){
+                $(".display").append("<strong>마우스오버</strong>")
+                // 밖에 있다가 wrap1으로 왔을때, wrap1에서 자식요소로 가도 또 적용되고
+                // 자식요소에 있다가 wrap1로 나왔을 때도 또 적용된다
+            })
+
+            $(".wrap2").mouseenter(function(){
+                $(".display").append("<em>마우스들어감</em>")   
+                // 자식요소 제외한 wrap2 영역만(자식요소에 들어갔다가 wrap2로 나왔을 때도 안된다.)
+                // 완전히 밖에 있다가 wrap2 영역으로 왔을 때만 적용
+            })
+
+
+            // hover는 mouseenter와 mouseleave 합친 것!!
+        })
+
+
+    </script>
+</head>
+<body>
+    
+    <div class="wrap1 bg">
+        <div class="inner">mouseover</div>
+    </div>
+
+    <div class="wrap2 bg">
+        <div class="inner">mouseenter</div>
+    </div>
+
+    <div class="display"></div>
+
+
+</body>
+</html>

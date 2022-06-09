@@ -1,0 +1,23 @@
+*{margin: 0; padding: 0;}
+#outer{
+    width: 500px; height: 500px;
+    margin: 0 auto;
+    border: 1px solid #333;
+    overflow: auto;   /* 이건 뭐더라ㅠㅠ */    /* 컨텐츠 량에 따라 스크롤바를 추가할지 자동으로 결정된다.( 필요에 따라 가로, 세로 별도로 추가될 수도 있다.] */
+    /* overflow: visible; */
+}
+
+.inner{
+    width: 1000px;
+    height: 1000px;
+    background: #ff6600;
+}
+
+#info{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 300px;
+    margin-left: -550px;
+    text-align: right;
+}

@@ -1,0 +1,17 @@
+*{margin: 0; padding: 0;}
+#wrap{width: 200px; margin: 30px auto;}
+#wrap .page{text-align: right; margin-bottom: 5px;}
+#wrap .page .page_n{margin-right: 10px;}
+#wrap .page button{
+    background: #666;
+    width: 20px; height: 20px;
+    line-height: 20px;   /* 이거 해야 정중앙에 온다! */
+    border: none;
+    overflow: hidden;     /* 왜 굳이 이전 다음 글자를 써서 이렇게 없애지 */
+   
+}
+#wrap .vis{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}

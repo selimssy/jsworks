@@ -1,0 +1,83 @@
+append하면 맨 뒤에 추가,
+prepend하면 맨 앞에 추가
+
+
+
+prepend() 
+append()
+before()
+after() 
+prependTo() 
+appendTo()
+insertBefore()
+insertAfter()
+
+
+
+let totalNum = $(".vis > div").length        // 이렇게 .vis의 div 갯수 구할 수 있다!!
+
+
+
+if(currentNum == 0)  이거 자꾸 == 으로 안하고 = 으로 하게된다ㅠㅠ
+
+
+position /* absolute 랑 fixed랑 무슨차이지ㅠ */
+transition: all 0.5s ease;    /* 뭐지ㅜ */
+
+
+
+display none이랑 visibility hidden 다시ㅠㅠ
+
+
+toggle 공부하자ㅠㅠㅠ
+
+
+
+$("div").empty( ) 했을 때 <div>메모1</div>   저 메모1도 사라진다!!  
+
+
+
+
+
+
+let c = confirm("값을 바꾸시겠습니까?")   // 이렇게만 해도 바꾸면 물어본다
+                if(!c){   // 취소가 클릭된다면
+                    $(this).val(10);   // 값을 10으로 지정
+                }
+
+이거 복습!!
+
+
+
+
+
+$("#id").focus()  // 여기로 커서 가도록
+
+
+
+$("p", this) 이건뭐지ㅠ
+
+
+
+
+이벤트 강제 실행  : trigger( )함수
+
+
+구글 검색 백준 알고리즘 - 코딩 연습, 코딩 테스트 준비, 티어 확인
+
+
+
+
+
+
+
+
+
+이벤트 객체
+function(event){
+eventt.preventDefault( )    // 기본 이벤트 방지
+event.stopPropagation( )   // 이벤트 버블링 방지
+}
+
+$("button").click(function(event){    // event 무슨 역할인지 잘 모르겠다ㅠ
+이벤트 객체 형식이라는데 좀 알아보자ㅠ
