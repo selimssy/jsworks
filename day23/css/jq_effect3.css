@@ -1,0 +1,56 @@
+*{margin:0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none; color: black;}
+h1{text-align: center; padding: 10px;}
+#gnb{width: 600px; margin: 0 auto;}
+#gnb .m{
+    /* 대체 어떨땐 붙이고 어떨땐 띄는거지.. */
+    float: left;
+    width: 120px;
+    text-align: center;
+    position: relative;
+}
+#visual{
+    clear: both;
+    background: url("../img/f1.jpg") no-repeat center center; 
+    /* center center 하니까 그림이 좀 가운데로 온다! */
+    height: 300px;
+}
+#gnb .m > a{
+    display: block;
+    height: 40px;
+    font-size: 1.4em;
+    line-height: 40px;   
+}
+#gnb .m.on > a{
+    border-bottom: 5px solid #725f3f;
+    box-sizing: border-box;
+    /* 이거 꼭 해야 흔들리지다!!(margin이랑 padding쓸 때는 box-sizing: border-box 꼭 생각해두자) */
+}
+#gnb .m ul{
+    position: absolute;
+    top: 40px; left: 0;
+    /* 이렇게하니까 통째로 덩어리가 배치가 되네.. */
+    width: 100%;
+    background: #000;
+    display: none;
+}
+
+#gnb .m ul li a{
+    display: block;
+    /* a태그에서 속성 안먹힐 때 이거 하면 먹힌다!! */
+
+    color: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+#gnb .m ul li a:hover, #gnb .m ul li a:focus{
+    background: #fff;
+    color: #000;
+}
+/*focus는 탭 놓여져있을 때*/
+
+#visual a{
+    display: none;
+}

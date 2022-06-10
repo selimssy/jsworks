@@ -1,0 +1,29 @@
+hasClass("on")
+클릭했을때 한번 더 클릭했을때 나오게하는거?
+
+
+
+
+$(선택자).show(speed, easing, callback)
+ speed의 매개변수 – “slow”, “fast”, milliseconds
+ easing은 움직임 효과 – “swing”, “linear” 적용
+
+
+
+
+$(선택자).animate({속성:값}, speed, easing, callback)
+callback은 애니메이션이 종료된 후 실행되는 함수★
+
+
+
+혹시 mouseenter말고 mouse뭐였지 자식에도 적용되는 그걸로하면 li에 올려져있어도 안없어지려나?
+
+
+
+#gnb .m.on 띄어쓰기ㅠㅠㅠ
+
+
+
+clearInterval(timer)  ??
+
+on("mouseenter focusin", function) 이건 뭐지ㅠ
