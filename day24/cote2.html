@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cote</title>
+</head>
+<body>
+    
+<script>
+
+    // let a = prompt("문자열 입력")
+    let input = "FURDWLD"
+    // let num = input.charCodeAt(0) - 3
+    // console.log(typeof(num))  // number
+    // document.write(num)   // 65
+    // document.write(String.fromCharCode(num))   // A
+    console.log(input[2])   // B
+    console.log(input[7])   // undefined
+    if(console.log(input[7]) == null){
+        console.log("11")     // 11 나왔다!!! 근데 필요없네..
+    }
+    else{
+        console.log("22")
+    }
+
+
+
+    
+
+    for(let i=0; i < input.length; i++){
+        let num = input.charCodeAt(i) - 3
+        if(num >= 65){
+            document.write(String.fromCharCode(num))
+        }
+        else{
+            document.write(String.fromCharCode(num + 26))
+        }
+    }
+
+
+    let list1 = [21, 10, 34, 55, 61]
+    let a = 90
+    list1[5] = a
+    console.log(list1[5])   // 90
+
+    for(let i = 0; i < list1.length; i++){
+        let swipenum = 0;
+        if(list1[i] > list1[i+1]){
+            list1[i+1] = list1[i];
+            list1[i] = list1[i+1];
+        }
+    }
+    
+</script>
+
+
+</body>
+</html>
