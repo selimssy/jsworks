@@ -1,0 +1,56 @@
+상태변수 - toggle 방식
+
+
+
+right, left 방향은 원래 있는건가?
+
+
+
+background:rgba(0,0,0,0.7);   이걸로 팝업창 눌렀을 때 배경 까매지도록(투명도 꼭 줘야된다)
+z-index:200; 이걸로 맨앞으로 오도록
+
+
+
+$(window).height()  : 보여지는 창의 높이길이
+https://joo-dev.tistory.com/3 참고
+
+
+
+onclick="$('.popup_base').css('height',$(document).height());$('.contact_pop').show();"
+이런식으로 ;로 구분할 수 있었나..............?
+
+
+
+
+position:fixed 하면 스크롤 내려도 고정!
+
+
+
+href="#layout0" 이건뭐지
+
+
+
+
+스와이퍼 구글에 스와이퍼 페이지나 부스트랩에서도 가능!
+
+
+
+
+
+
+
+
+
+
+
+
+
+페르소나 프로필 만들기........?
+
+예시
+https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=byyhi&logNo=221004173211
+
+https://app.xtensio.com/
+페르소나 템플릿
+
+나는 주제를 취직으로??

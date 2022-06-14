@@ -6,11 +6,11 @@
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="stylesheet" href="css/swiper.min.css">
-<link rel="stylesheet" href="css/common copy.css">
+<link rel="stylesheet" href="css/common2.css">
 <script src="./js/jquery-3.6.0.js"></script>
 <script src="js/rollmain.js"></script>
 <script src="js/jquery.easing.js"></script>	
-<script src="./js/common.js"></script>  
+<script src="js/common_me.js"></script>  
 <script src="js/jquery.smooth-scroll.min.js"></script> 
 <!--[if lte IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -36,7 +36,7 @@
 				</ul>	
 				<nav>
 				<ul class="gnb clear">
-					<li><a href="javascript:;" class="openAll1">여행정보</a>
+					<li class="openAll1"><a href="javascript:;">여행정보</a>
 
                         <div class="gnb_depth gnb_depth2_1">
                             <ul class="submenu_list">
@@ -45,7 +45,7 @@
                             </ul>
                         </div>
 					</li>
-					<li><a href="javascript:;" class="openAll2">고객센터</a>
+					<li class="openAll2"><a href="javascript:;">고객센터</a>
 				        <div class="gnb_depth gnb_depth2_2">
                             <ul class="submenu_list">
                                 <li><a href="./notice_list.html">공지사항</a></li>
@@ -53,7 +53,7 @@
                             </ul>
                         </div>
 					</li>
-					<li><a href="javascript:;" class="openAll3">상품투어</a>
+					<li class="openAll3"><a href="javascript:;">상품투어</a>
                         <div class="gnb_depth gnb_depth2_3">
                             <ul class="submenu_list">
                                 <li><a href="javascript:;">프로그램 소개</a></li>
@@ -61,7 +61,7 @@
                             </ul>
                         </div>
 					</li>
-					<li><a href="javascript:;" class="openAll4">티켓/가이드</a>
+					<li class="openAll4"><a href="javascript:;">티켓/가이드</a>
                         <div class="gnb_depth gnb_depth2_4">
                             <ul class="submenu_list">
                                 <li><a href="javascript:;">항공</a></li>
@@ -118,8 +118,6 @@
             </div><!-- //visualRoll -->
         </div><!-- //main_rolling_pc -->
         
-
-		<!-- 모바일 롤링이미지 -->
         <div class="main_rolling_mobile">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -227,15 +225,12 @@
 	<p class="to_top"><a href="#layout0" class="s_point">TOP</a></p>
 </div>
 
-
-
-<!-- 모바일 롤링이미지 swiper 기능(pc롤링이미지는 직접 코딩한거고 모바일은 swiper을 썼다!) -->
 <script type="text/javascript" src="js/swiper.min.js"></script>
 <script type="text/javascript">
    $(document).ready(function(){
 		var swiper = new Swiper('.swiper-container', {
 			loop: true,
-			autoplay:5500,   // 5.5초
+			autoplay:5500,
 		    autoplayDisableOnInteraction: false,
 			pagination: '.swiper-pagination',
             paginationClickable: true
