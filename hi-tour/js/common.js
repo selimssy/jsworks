@@ -276,12 +276,12 @@ $(document).ready( function() {
 		$('header').addClass('on');
 		$('header .header_cont').slideDown('fast');
 		$('header .header_area .header_cont .closePop').show();			
-		$("body").bind('touchmove', function(e){e.preventDefault()});
+		// $("body").bind('touchmove', function(e){e.preventDefault()});   // 이제는 그냥 onclick으로 해도 된다 
 	});
 	$('header .header_cont .closePop').click(function(){
         $('.header_cont').slideUp('fast');
         $('header').removeClass('on');
-        $("body").unbind('touchmove');
+        // $("body").unbind('touchmove');
 	});
 	
 });
