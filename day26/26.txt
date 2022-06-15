@@ -1,0 +1,34 @@
+<script src="./js/jquery-3.6.0.js"></script> 이거 해놓고 그냥 body에다가
+onclick="$('#demo').css('color', 'red') 이렇게 해도 다 적용되넹
+
+
+
+if($(this).parent().parent().find('.subtxt').css('display') == 'none')     이런거 할 수 있었네ㅠ
+저번에 ==로 안하고 =로 해서 그랬나보다ㅠㅠ
+
+
+
+
+
+
+text-overflow:ellipsis; : 잘리는거 삭제
+
+
+
+
+
+
+
+페르소나 선생님 검색
+: UIUX 페르소나
+
+
+
+
+
+
+
+
+
+x 버튼에 있는 닫기 글자 안보이게 할 때
+text-indent를 -999px 이런식으로 하거나 font-size를 0으로 하거나 display : none으로 하거나!!
