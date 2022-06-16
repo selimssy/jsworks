@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+            $(".wrap").click(function(){
+                $(".wrap").addClass("on")
+                $(".incir").addClass("on")
+                $("#demo").css("color", "red")
+                })
+
+
+            $("#cl").click(function(){
+                $("#demo").css("color", "red")
+            })
+
+        })
+            
+        
+    </script>
+    <style>
+        .wrap{
+            border: 1px solid #ddd; width: 50px; height: 25px; border-radius: 20px; 
+            position: relative;  background: #fff; 
+            transition: all 1s ease-in-out; cursor: pointer;}
+
+        .wrap.on{
+            border: 1px solid #ddd; width: 50px; height: 25px; border-radius: 20px; 
+            position: relative; text-indent: -999px; background: blue;}
+    
+        .incir{
+            border: 1px solid #ddd; width: 26px; height: 26px; border-radius: 50%;
+             position: absolute; top: -1px; left: 0; background: #fff; 
+            transition: all 1s ease-in-out;
+        }
+
+        .incir.on{
+            border: 1px solid #ddd; width: 26px; height: 26px; border-radius: 50%;
+            text-indent: -999px; position: absolute; top: -1px; right: 0; background: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrap" >로그인
+        <div class="incir">원</div>
+    </div>
+    
+
+    <p id="demo">확인텍스트</p>
+
+
+    <a href="#" id="cl">확인용</a>
+    
+
+</body>
+</html>

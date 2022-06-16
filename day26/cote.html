@@ -8,11 +8,11 @@
 </head>
 <body>
     <script>
-
+        // 최댓값 찾고 몇 번째에 있는지 출력하는 문제
         let listmax = [10, 21, 35, 7, 15, 29, 70, 43]
 
         let max = 0
-        let findindex = 0
+        let findindex = 1
         for(let i = 0; i < listmax.length; i++){
             if(max < listmax[i]){
                 max = listmax[i]
@@ -23,12 +23,207 @@
             if(max != listmax[i]){
                 findindex ++
             }
+            else{
+                break
+            }
         }
 
 
-        document.write("최댓값 : " + max)
+
+        document.write("최댓값 : " + max + "<br>")
         console.log(listmax)
-        docu
+        document.write(findindex)
+
+
+
+
+
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+
+
+
+
+
+        // 팩토리얼 출력 문제
+
+        let n = 5
+        let facto = n
+        function factori(){
+            for(i = 1; i < n; i++){
+                facto *= (n - i)
+            }
+            document.write(facto)
+        }
+        
+        factori()
+
+
+
+
+
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+
+
+
+
+
+        // 진짜 약수(1과 n 제외한)가 주어지면 n를 구하는 프로그램
+
+        // 4:(1, 2)   64:(5, 2/4/8/16/32)     24:(6, 2/3/4/6/8/12)
+
+        // 자바스크립트 숫자 정렬
+        // 오름차순 : listname.sort(function(a, b){ return a -b })
+        // 내림차순 : listname.sort(function(a, b){ return b -a })
+
+
+        // 1개면 그걸 2번 곱하고 2개 이상이면 끝에 2개를 곱하고
+
+
+        // let num = 14
+        // let list = [14, 26456, 2, 28, 13228, 3307, 7, 23149, 8, 6614, 46298, 56, 4, 92596]
+
+        let num = 1
+        let list=[3]
+
+        function yac(){
+            let list2 = list.sort(function(a, b){
+                return a - b
+            })
+            
+            if(num == 1){
+                document.write(list2[0] * list2[0])
+            }
+            else{
+                document.write(list2[0] * list2[list2.length-1])
+            }      
+        }
+
+        yac()
+
+
+
+
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+
+
+
+
+        // 주어진 숫자들 중 홀수를 더하고 홀수들 중 최솟값을 출력하는 프로그램 
+
+        let numlist = [12, 77, 38, 41, 53, 92, 85]
+        let oddlist = []
+        let oddnum = -1
+        let sumV = 0
+
+        function oddSum(){
+            for(let i = 0; i < numlist.length; i++){
+                if(numlist[i] % 2 == 1){
+                    oddnum +=1
+                    oddlist[oddnum] = numlist[i]
+                    sumV += numlist[i]
+                }
+            }
+
+            let oddsort = oddlist.sort(function(a, b){
+                return a - b 
+            })
+
+            document.write(sumV + "<br>")
+            document.write(oddsort[0])
+            console.log(oddlist)
+            console.log(oddsort)       // 전역변수라서 oddlist도 정렬된걸로 저장되는데 이건 어떻게해야되는지 알아보자
+        }
+
+        oddSum()
+
+
+
+
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+
+
+        // 최고점을 각각의 점수로 나눠 조작된? 점수로 만들고 이들의 평균을 구하는 프로그램
+
+        subnum = 5
+        score = [1, 2, 4, 8, 16]
+
+        let scoresort = score.sort(function(a, b){
+                    return b - a
+                })
+        
+                let maxscore = scoresort[0]
+                let newscore = []
+                let newSumv = 0
+                let newAvg = 0
+                // console.log(maxscore)
+
+        function news(){
+
+            for(let i = 0; i < score.length; i++){                            
+                newscore[i] = (score[i] / maxscore) * 100
+                newSumv += newscore[i]
+                newAvg = newSumv / subnum
+
+                console.log(newscore)
+                console.log(newSumv)
+                console.log(newAvg)
+            }
+            
+            document.write(newAvg)
+        }
+
+        news()
+       
+
+
+
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+
+
+
+
+        // 주어진 n개의 정수 중 최솟값과 최댓값을 공백으로 구분해 출력
+
+        let dulnum = 5
+        let dullist = [20, 10, 35, 30, 7]
+
+        let dulsort = dullist.sort(function(a,b){
+            return a - b
+        })
+
+        document.write(dullist[0] + " " + dullist[dulnum - 1])
+
+
+
+
+
+
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+
+
+
+        let str1 = abcde
+        
+
+
 
     </script>
 </body>

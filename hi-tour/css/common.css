@@ -331,9 +331,9 @@ h1.loginTit a img {width:100%;}
 .appForm .pilsoo_item:before {content:"*"; display:inline-block; position:absolute; left:5px; top:3px; width:15px; font-weight:bold; font-size:17px; color:#f00;}
 .appForm .app_list {padding:10px 0; border-bottom:1px solid #ccc;}
 .appForm .app_list li {padding:8px 0;}
-.appForm .app_list li .tit_lbl {position:relative; float:left; width:150px; box-sizing:border-box; padding-left:20px; line-height:42px; font-weight:bold; font-size:17px; letter-spacing: -2px;}
+.appForm .app_list li .tit_lbl {position:relative; float:left; width:150px; box-sizing:border-box; padding-left:20px; line-height:42px; font-weight:bold; font-size:17px; letter-spacing:2px;}
 .appForm .app_list li .app_content {float:right; width:770px;}
-.appForm .app_list li .app_content * {vertical-align:top;}
+.appForm .app_list li .app_content * {vertical-align: top;}
 .appForm .app_list li .app_content.email_area .ico_space {display: inline-block; padding-top:10px;}
 .appForm .app_list li .app_content.radio_area {height:45px; box-sizing:border-box; padding-top:12px;}
 .appForm .app_list li .app_content.checkbox_area {height:45px; box-sizing:border-box; padding-top:12px;}
@@ -551,13 +551,14 @@ h1.loginTit a img {width:100%;}
 	.appForm .btn_line a.btn_app {margin-left:0;}
 
 	/* MYPAGE */
-	.mypageTab {position:relative;width:100%; margin:20px auto 0; padding-top:50px;}
+	/* .mypageTab {position:relative;width:100%; margin:20px auto 0; padding-top:50px;}
 	.mypageTab dt {position:absolute; top:0; left:0; width:100px;}
 	.mypageTab dt.t2 {left:101px;}
 	.mypageTab dt a {display:block; height:50px; line-height:50px; text-align:center; background:#dfe3ea; font-size:18px; color:#6f788B;}
 	.mypageTab dt a.on {background:#000; color:#fff;}
 	.mypageTab dd.hidetab {display:none;}
-	.mypageTab dd {border-top:2px solid #000;}
+	.mypageTab dd {border-top:2px solid #000;} */    
+	/* 이거 없는데..? */
 	.regForm {width:100%; margin:0 auto;}
 	.regForm .reg_list {padding:10px 0 0; background:none;}
 	.regForm .reg_list li {position:relative; min-height:50px; padding:0; border-bottom:1px solid #ccc;}
