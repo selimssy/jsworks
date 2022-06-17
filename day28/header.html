@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        header{width: 100%; height: 113px; background: rgba(0,0,0,0.5);}
+        #innerbox{margin: 0 auto; width: 1050px;}
+        #logo{position: absolute; top: 40px;}
+        #loginjoin{list-style: none; text-align: right; padding-top: 10px;}
+        /* innerbox안에 맨오른쪽 text-align: right; 이렇게ㅠㅠ */
+        /* position: absolute; top: 10px; 이거 하면 left도 0이 되버리고 꼬인다ㅠ 패딩으로!ㅠ */
+        #loginjoin li{display: inline-block;}
+        #loginjoin li::after{content: "|"; color: #fff; padding-left: 5px;}
+        #loginjoin li:nth-of-type(2)::after{content: "";}
+        #loginjoin li a{text-decoration: none; color: #fff;}
+
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="innerbox">
+            <div id="logo">
+                <a href="#"><img src="../hi-tour/img/logo.png"></a>
+            </div>
+
+            <div>
+                <ul id="loginjoin">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+
+
+
+            </div>
+        </div>
+    </header>
+</body>
+</html>

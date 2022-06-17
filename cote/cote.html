@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let str1 = "ABCDE"
+
+        console.log(str1.charCodeAt(0))
+
+        console.log(String.fromCharCode(66))
+
+
+        //알파벳 소문자 각각이 몇 번째에 처음 등장하는지 출력하는 프로그램(없으면 -1로 출력)
+
+        let word = "baekjoon";
+      
+        function alphanum(){    
+            for(let i=0; i<26; i++){
+                let indexnum = 0
+                for(let j = 0; j < word.length; j++){
+                    if(String.fromCharCode(97 + i) == word[j]){                   
+                        break
+                    }
+                    else{
+                        indexnum +=1
+                    }
+                    if(indexnum == word.length){
+                        indexnum = -1
+                    }
+                    console.log(indexnum)
+                }
+                document.write(indexnum + " ")
+            }
+        }   
+
+        alphanum()
+
+
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+
+
+
+
+
+        // 2진수 변환 방법
+        // 10진수 -> 2진수 : 변환할것.toString(2)
+        // 2진수 -> 10진수 : parseInt(변환할것, 2)
+        let ten_num = 13
+        let bin_num = ten_num.toString(2)
+        console.log(bin_num)   // 1010
+        console.log(typeof(bin_num))     // string
+        console.log(bin_num.length)    // 4
+
+       
+        function binnum(){ 
+            for(let i = 0; i < bin_num.length; i++){
+                if(bin_num[bin_num.length -1 -i] == 1){
+                    document.write(3 - (bin_num.length -1 -i) + " ")
+                }
+            }
+        }
+
+        binnum()
+
+
+
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+
+        // let nums2 = [1, 9, 8, 4, 3, 5]
+        // for(i = 0; i < nums2.length - 2; i++){
+        //     for(j = i+1; j < nums2.length - 1; j++){
+        //         for(k = j+1; k < nums2.length; k++){
+        //             document.write(nums2[i] + ", " + nums2[j] + ", " + nums2[k] + "<br>")
+        //         }
+        //     }
+        // }
+        // 꼭 복습하자 꼭꼭ㅠㅠ
+
+
+        let nums = [1, 2, 7, 6, 4]
+        // let resultnum = 0   // resultnum 어디다할지 고민하자ㅠ
+        function sosufind(){
+            for(let i = 0; i < nums.length - 2; i++){
+                for(let j = i+1; j < nums.length - 1; j++){
+                    for(let k = j+1; k < nums.length; k++){
+                        let sonum = nums[i] + nums[j] + nums[k]
+                        document.write(nums[i] + ", " + nums[j] + ", " + nums[k] + " ") 
+                        document.write(nums[i] + nums[j] + nums[k] + "<br>")
+                        let namunum = 0
+                        for(let l = 1; l <= sonum; l++){
+                            if(sonum % l ==0 ){
+                                namunum +=1
+                            }
+                        
+                        if(namunum == 2){
+                            resultnum +=1   
+                            // document.write(namunum + "<br>")                            
+                        }
+                        } 
+                    
+                    }
+                }
+            }
+            document.write(resultnum)
+        }
+
+        sosufind()
+
+
+
+    </script>
+</body>
+</html>

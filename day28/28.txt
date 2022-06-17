@@ -1,0 +1,83 @@
+모바일 버전에서 float letf하고 width 100% 꼭 줘야!
+
+
+index.html에서 notice_list.html, 로그인, 마이페이지, 회원가입, 사이트맵으로 넘어갔다
+
+
+게시판에서 칸처럼 보이는거 border-bottom으로 해야된다!  
+그리고 맨 위에는 border-top!
+
+
+
+.bbsListTbl td:nth-child(1) {width:10%;}
+.bbsListTbl td:nth-child(2) {width:55%;}
+.bbsListTbl td:nth-child(3) {width:15%;}
+.bbsListTbl td:nth-child(4) {width:20%;}   이걸로 열별 너비!
+
+
+검색창 폼으로 해야 백엔드랑 연동할 수 있다!
+
+
+background:url('../img/ico_search.png') no-repeat 10px 50%; background-size:15px;}
+저기서 10px 50%가 left top인데 top이 50%면 딱 중앙에 온다!
+
+
+
+
+
+
+repeat: y 하면 세로로 쭉 반복된다
+
+.bbsview_list li.bbs_title {width:100%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; height:50px; line-height:50px; font-weight:bold; font-size:16px;}
+.bbsview_list li.bbs_hit {height:40px; line-height:40px; float:left; width:50%;}
+.bbsview_list li.bbs_date {height:40px; line-height:40px; float:left; width:50%;}
+.bbsview_list li.bbs_content {clear:both; min-height:200px; padding:20px 15px;}
+
+여기서 title은 한 줄 혼자, hit랑 date는 한 줄에 같이라서 width:50%하고 float:left해주고
+다음줄인 content에서는 다시 혼자 한줄쓸거라 clear:both 해준다!!★
+
+비슷한 개념으로
+.program_list li {float:left; width:31.5%; margin:0 0.9%;}
+.program_list li:nth-child(3n+1) {clear:both;}
+이거는 float left 하다가 3n+1번째에서 clear both!!
+
+
+
+
+
+clear: both 3n + 1
+
+
+창 크기 작게할 때 사진도 비례해서 작게하려면 width를 %로 주면 되나? 
+
+
+
+
+
+
+
+:before  -  요소 내용 앞쪽에 새 컨텐츠를 추가
+:after  -  요소 내용 끝에 새 컨텐츠를 추가
+https://blogpack.tistory.com/1025  여기 자바스크립트 내용 많다
+
+가상 요소에 숫자 표현을 구현할 때는 counter() 함수를 사용
+
+
+
+
+
+
+
+api로 로그인 구현?
+
+
+
+포트폴리오 제출할 때 사이트맵 꼭 넣어야한다!!!
+
+
+
+
+
+
+
+프로그램소개, 로그인, 회원정보(마이페이지), 회원가입 추가로 만들어야ㅠ
