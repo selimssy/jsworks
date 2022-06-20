@@ -1,0 +1,20 @@
+*{margin: 0; padding: 0;}
+header{width: 100%; height: 100px; background: #fff; border-bottom: #fff;}
+header #container{width: 1000px; margin: 0 auto; text-align: center; border-bottom: 2.5px solid #ff7f00;}
+header #container img{width: 30px;}
+header #container h1{margin:20px;}
+.menubar{float: left; margin-left: 20px;}
+section #container{width: 1000px; margin: 0 auto;}
+.contents img{/*text-align: center;*/ width: 100%;}
+
+
+
+.contents #category{width: 100%; height: 150px; background: #fff; margin-top: -5px; padding-top: 10px;}
+
+#category a{width: 75px; height: 75px; margin: 20px 25px; color: #000; text-decoration: none; float: left; text-align: center;}
+.icon img{width: 70px; height: 70px;}
+.cate_name{display: block; margin-top: 5px;}
+
+#new{width: 100%; margin: 30px 10px;}
+#new h3{line-height: 2; background: url(./images/gift.png) no-repeat; background-size: 25px; background-position: 240px;}
+#new p{color: #777;}

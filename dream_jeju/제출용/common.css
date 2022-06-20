@@ -1,0 +1,235 @@
+*{margin: 0; padding: 0; }
+#container{width: 100%; margin: 0 auto;}
+main{width: 1000px; margin: 30px auto;}
+
+/* header영역 */
+header{width: 100%; height: 80px; background: rgba(0,59,0,0.7);}
+.menu{display: none;}
+#logo{width: 180px; float: left; padding: 15px 30px;}
+#logo a{color: yellow; text-decoration: none;}
+header nav{width: 800px; float: right; display: block;}
+#topMenu{list-style: none; text-align: right; 
+  margin-right: 50px; padding: 15px;}
+#topMenu li{display: inline-block; margin: 10px 20px;}
+#topMenu li a{color: #fff; text-decoration: none;}
+#topMenu li a:hover{color: yellow;}
+#topMenu2{display: none;}
+
+
+/* index 스타일 */
+/* #contents{width: 1000px; margin: 30px auto;} */
+/* product랑 중복이니까 맨위에 main으로 올리자 */
+#healing, #activity{margin: 30px 10px 40px 10px;}
+#sightseeing ul li{margin: 10px 30px;}
+#sightseeing ul li a{text-decoration: none;}
+
+#contents section h2{margin-bottom: 20px;}
+#contents section p{line-height: 2; text-align: justify;}
+
+#plan{font-size: large; margin-top: 15px;}
+
+#healing img, #activity img{float: left; margin-right: 20px;
+border-radius: 20px;}
+
+#contents #healing, #activity{height: 300px;}
+/* 최소 사진크기만큼 줘야 밑에꺼가 안넘어온다! */
+
+footer{width: 100%; margin: 30px auto; border-top: 2px solid #222;}
+
+#bottomMenu{list-style: none; margin: 10px 10px 10px 30px;}
+#bottomMenu li{display: inline-block; margin: 10px 0;
+                        border-right: 1px solid #aaa; padding: 0 10px ;}
+
+#bottomMenu li:last-child{border:none}
+/* 마지막 세로바 없애는 작업!! */
+
+#bottomMenu li a{text-decoration: none; color: #333;}
+
+
+  /* to_top작업 */
+  /* .to_top {position:fixed; right:20px; bottom:112px; background:none; z-index:100;}
+  .to_top a {display:block; width:45px; height:45px;  border-left:none;
+     border-bottom:none; background:url(./images/top.PNG) no-repeat center;
+    background-size:45px; text-indent: -999px;} */
+  .to_top{display: none;}
+  .to_top.hide{display: none;}
+
+
+  .closePop{
+    width: 35px; height: 35px;
+    font-size: 0;
+    position: absolute; top: 20px; right: 10px;
+    background: url(./images/close.png) no-repeat; 
+    background-size: 30px;
+    text-align: right;
+    cursor: pointer;
+    display: none;
+  }
+
+
+
+
+
+
+/* product 스타일 */
+/* #product{width: 1000px; margin: 30px auto;} */
+#product p, li{line-height: 2;}
+#product h2{margin: 10px;}
+#description{ 
+  width: 800px; margin: 0 auto;
+  border: 1px solid #ccc;
+  padding:  20px 60px; margin-bottom:20px ; 
+  border-top-right-radius: 30px; border-top-left-radius: 30px;}
+
+#description img{border-radius: 5px; margin: 10px;}
+#receipe{ width: 800px; margin: 0 auto;
+  border: 1px solid #ccc;
+  padding:  20px 60px; margin-bottom:20px }
+/* #product #receipe, p, ol{padding-left: 40px;} */
+
+#receipe ol{padding-left: 20px;}
+
+#package{width: 800px; margin: 0 auto; 
+  border: 1px solid #ccc;
+  padding:  20px 60px; margin-bottom:20px;
+  border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;}
+
+
+#product table, th, td{border: 1px solid #ccc; border-collapse: collapse;
+padding: 10px 20px;}
+
+
+
+
+
+/* board 스타일 */
+#qna{height: 900px;}
+#board h2{margin: 30px 10px;}
+#tbl_board{width: 880px; margin-left: 40px; text-align: center;}
+#tbl_board, th, td{border: 1px solid #ccc; border-collapse: collapse;}
+/* .col{background: #eee;} */
+#tbl_board thead{background: #eee;}
+
+
+
+
+
+
+/* ABOUT ME 스타일 */
+
+
+#profile p{line-height: 2;}
+#profile {
+  width: 800px;
+  border: 1px solid#eee;
+  padding: 40px;
+  }
+#career{
+  background: rgba(225, 240, 11, 0.2);
+  border-radius: 10px;
+  
+}
+
+#intro img{
+  /* height: 100px;
+  float: left;
+  margin: 30px; */
+  margin: 30px;
+}
+
+#me{text-shadow: 1px 1px 1px rgb(16, 16, 129);}
+
+#site{
+  list-style: none;
+  font-size: small;
+}
+
+
+#site a{
+  text-decoration: none;
+  color: #333;
+}
+
+#profile h1, h2{
+  margin: 20px 0;
+  /* text-align: center; */
+}
+
+
+#career ul{
+  list-style: none;
+}
+
+
+#skill{margin-top: 20px;}
+
+#skill ul{
+  list-style: none;
+}
+
+#skill a{
+  text-decoration: none;
+}
+
+
+/* 태블릿 버전 */
+@media all and (max-width:1165px) and (min-width:801px){
+  main{width: 90%; margin: 30px auto;}
+  header nav{width: 520px; float: right; display: block;}
+  #topMenu{list-style: none; text-align: right; margin-right: 20px; padding: 15px;}
+  #topMenu2{display: none;}
+
+
+  /* to_top작업 */
+.to_top {display: block; position:fixed; right:20px; bottom:112px; background:none; z-index:100;}
+.to_top a {display:block; width:45px; height:45px;  border-left:none;
+   border-bottom:none; background:url(./images/top.PNG) no-repeat center;
+  background-size:45px; text-indent: -999px;}
+.to_top.hide{display: none;}
+}
+
+
+
+/* 모바일 버전 */
+@media all and (max-width:800px) {
+  main{width: 90%; margin: 30px auto; margin-right: 55px;}
+  .menu{display: block; float: left; padding: 15px 10px 0 20px; width: 7%;}
+  #logo{width: 70%; float: left; padding: 15px 30px; text-align: center;}
+  #logo a{color: yellow; text-decoration: none;}
+  /* header nav{display: none;} */
+
+  /* pop메뉴 */
+  
+
+
+  header nav{width: 100%;  background: rgba(0,59,0, 1); display: none;}
+  header.on{background: rgba(0,59,0,1);}
+  #topMenu{display: none;}
+  #topMenu2{list-style: none; text-align: center; margin-right: 0; padding: 0; }
+  #topMenu2 li{width: 50%; float: left; margin: 0; border-top: 1px solid #ddd; box-sizing: border-box; padding: 10px 0;}
+  #topMenu2 li:nth-child(2n+1){border-right: 1px solid #ddd;}
+  #topMenu2 li:nth-child(3),#topMenu li:nth-child(4){border-bottom: 1px solid #ddd;}
+  #topMenu2 li a{color: #ddd; text-decoration: none; font-size: 1.2em;}
+  #topMenu2 li a:hover{color: yellow;}
+  /* .closePop{display: block;} */
+
+
+  /* section부분 */
+  
+  #healing, #activity, #sightseeing{width: 90%; height: 300px; margin-bottom: 450px;}
+  #healing, #activity, #sightseeing h2{text-align: center;}
+  #healing img, #activity img{width: 100%; clear: both; margin: 10px 20px; 
+    border-radius: 20px;}
+  #healing, #activity, #sightseeing p{padding-left: 25px;}
+  #sightseeing{height: 100px;}
+  #sightseeing ul{padding-left: 30px;}
+  #contents section p{line-height: 2; text-align: justify; padding-left: 30px;}
+  
+
+    /* to_top작업 */
+  .to_top {display: block; position:fixed; right:15px; bottom:80px; background:none; z-index:100;}
+  .to_top a {display:block; width:45px; height:45px;  border-left:none;
+    border-bottom:none; background:url(./images/top.PNG) no-repeat center;
+    background-size:45px; text-indent: -999px;}
+  .to_top.hide{display: none;}
+}

@@ -1,0 +1,23 @@
+태블릿 to_top 난장판이다ㅠㅠ 다시 정리해야ㅠㅠ
+
+
+
+
+
+
+if(paresInt($("header").width()))
+
+
+
+$(window).resize(function(){
+	if(paresInt($("header").width() > 800))
+$(header_cont).show()
+})
+	else
+$(header_cont).hide()
+
+핵심은 resize!!★★
+
+
+
+선생님꺼 보자ㅠ(htmlworks jeju_tour에 있다!)
