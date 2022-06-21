@@ -1,0 +1,83 @@
+자바 8,11 현업
+
+jdk 다운로드에서 검색해서 11로 클릭 윈도우 클릭 첫번째꺼 다운로드
+로그인 selimssy3060@gmail.com으로
+비번 첫자 대문자
+
+통합개발환경(ide) - 이클립스
+
+
+
+자바 구조
+
+프로젝트 > 패키지 > 클래스 파일
+
+
+
+
+
+자바 자료형
+int 숫자 
+double 실수 
+char 문자 
+char alpha = 'k'
+
+문자열 String
+String season = "여름"
+
+
+자료형과 변수
+연산자(산술, 논리, 비트)
+제어문(조건, 반복문)
+함수(메서드)
+배열(리스트)
+클래스(객체)
+상속
+인터페이스
+
+
+
+자바는 문장 끝마다 세미콜론 없으면 안된다!!!
+
+
+
+자바에서는 새파일이 새 class 개념
+class 만들 때
+파일의 첫글자 대문자로
+
+실행하려면 ~~to create에 첫번째꺼 main 체크해야!
+
+
+
+앞에 public이 붙어있으면 파일 이름!
+
+
+
+
+documentation 다운로드
+
+
+new procect에서
+don't create!
+
+메인 빼먹으면 main 쓰고 컨트롤 + 스페이스바!
+
+
+
+www.unicode.org.charts/PDF/UAC00.PDF
+
+
+
+
+
+
+
+position fixed하면 올라가는거 해결하자ㅠㅠ
+
+
+
+
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
