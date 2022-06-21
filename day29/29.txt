@@ -21,3 +21,8 @@ $(header_cont).hide()
 
 
 선생님꺼 보자ㅠ(htmlworks jeju_tour에 있다!)
+
+
+
+그리고 메뉴버튼 한 번 더 누르면 다시 없어지도록!
+toggle 방식으로 해보자

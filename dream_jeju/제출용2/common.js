@@ -44,7 +44,25 @@ $(document).ready(function(){
     });
 
 
-   
+
+
+
+    // t방식
+
+    let isOpen = false;   // 상태변수
+    $(".openMo~").click(function(){     
+        if(isOpen == false){
+            $("header").addClass("on")
+            $(".header_cont").slideDown("fast")
+            $(pop).show()
+            isOpen = true
+        }
+        else{  // isOpen == true
+            $(".header_cont").slideUp("fast")
+            $('header').removeClass('on'); 
+            isOpen = false
+        }
+    })
 
 
 })

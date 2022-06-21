@@ -192,7 +192,8 @@ padding: 10px 20px;}
 
 /* 모바일 버전 */
 @media all and (max-width:800px) {
-  main{width: 90%; margin: 30px auto; margin-right: 55px;}
+  /* header{position: fixed;} */
+  main{width: 90%; margin: 0 auto; margin-right: 55px; }
   .menu{display: block; float: left; padding: 15px 10px 0 20px; width: 7%;}
   #logo{width: 70%; float: left; padding: 15px 30px; text-align: center;}
   #logo a{color: yellow; text-decoration: none;}
@@ -215,6 +216,7 @@ padding: 10px 20px;}
 
 
   /* section부분 */
+  
   
   #healing, #activity, #sightseeing{width: 90%; height: 300px; margin-bottom: 450px;}
   #healing, #activity, #sightseeing h2{text-align: center;}
